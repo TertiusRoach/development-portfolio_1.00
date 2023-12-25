@@ -16,11 +16,6 @@
 
 ## Terminal Installations
 
-[🠉](https://www.compart.com/en/unicode/U+1F809)
-[🠊](https://www.compart.com/en/unicode/U+1F80A)
-[🠋](https://www.compart.com/en/unicode/U+1F80B)
-[🠈](https://www.compart.com/en/unicode/U+1F808)
-
 > 🠋 Executing this terminal command initializes a new Node.js project by generating a "package.json" file.
 
     npm init -y
@@ -36,7 +31,7 @@
     npm install bootstrap
     npm install typescript
 
-> 🠋 These are all the commands used by **gulpfile.js** files.
+> 🠋 The [gulpfile.js](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/gulpfile.js) document streamlines the transfer of source files from development to distribution. To make these packages work, install [Gulp Tasks](https://marketplace.visualstudio.com/items?itemName=nickdodd79.gulptasks) for Visual Studio Code.
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
