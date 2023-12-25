@@ -11,6 +11,9 @@ This readme serves as a guide to delineate my personalized front-end development
             <a href="#folder-structure">Folder Structure</a>
         </li>
         <li>
+            <a href="#default-resolutions">Default Resolutions</a>
+        </li>
+        <li>
             <a href="#subject-here">Subject Here</a>
         </li>
     </ol>
@@ -26,6 +29,15 @@ The guidance on recommended resolutions for various file formats are also sample
 
 to make for scalable projects.
 sizes and specifications
+
+## Default Resolutions
+
+filename.ico 🠊 256x256
+filename.gif 🠊 500x500
+filename.svg 🠊 500x500
+filename.jpg 🠊 1280x720 **(720p)**
+filename.mp4 🠊 1920x1080 **(1080p, 25fps)**
+filename.png 🠊 3840x2160 **(2160p)**
 
 ## Subject Here
 
