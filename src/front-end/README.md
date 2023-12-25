@@ -26,7 +26,7 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+<!-- ABOUT THE PROJECT TEST -->
 
 ## About The Project
 
