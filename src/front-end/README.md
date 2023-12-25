@@ -1,6 +1,6 @@
 # Front-end Documentation
 
-<!--|▶| Table of Contents |◀|-->
+<!--|🠊 Table of Contents 🠈|-->
 <details>
   <summary><h3>Table of Contents<h3></summary>
     <li>
@@ -10,15 +10,15 @@
 
 ---
 
-**Description Here**
+### Section 1: Subject Here
 
-### Step 0: Install Software
+### Section 2: Install Terminal Commands
 
-### Step 0: Install Terminal Commands
-
-> Before proceeding with the terminal commands outlined below, ensure that you have successfully installed Node.js.
+> Description Here
 
     npm init -y
+
+> Description Here
 
     npm install gulp
     npm install sass
@@ -28,6 +28,8 @@
     npm install mongodb
     npm install bootstrap
     npm install typescript
+
+> Description Here
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
@@ -42,6 +44,8 @@
     npm install --save-dev gulp-delete-file
     npm install --save-dev gulp-string-replace
     npm install --save-dev gulp-remove-html-comments
+
+> Description Here
 
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
