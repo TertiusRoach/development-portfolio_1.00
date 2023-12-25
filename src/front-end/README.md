@@ -18,7 +18,7 @@ This readme serves as a guide to delineate my personalized front-end development
 
 ---
 
-# Folder Structure
+## Folder Structure
 
 This is specific to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure.
 
