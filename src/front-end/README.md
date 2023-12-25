@@ -16,7 +16,7 @@
 
 ## Terminal Installations
 
-> 🠋 Executing this terminal command initializes a new [_Node.js_](https://nodejs.org/en) project by generating a "package.json" file.
+> 🠋 Executing this terminal command initializes a new _[Node.js](https://nodejs.org/en)_ project by generating a "package.json" file.
 
     npm init -y
 
