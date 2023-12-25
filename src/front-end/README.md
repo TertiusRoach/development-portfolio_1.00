@@ -36,7 +36,7 @@
     npm install bootstrap
     npm install typescript
 
-> 🠋 These are all the commands used by `gulpfile.js` files.
+> 🠋 These are all the commands used by **gulpfile.js** files.
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
