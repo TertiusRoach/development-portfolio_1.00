@@ -1,23 +1,18 @@
-# Front-end Documentation
-
-<!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary><h1></h1>Front-end Documentation</summary>
     <ol>
         <li>
-            <a href="#Step-1">Step 1: Install Terminal Commands</a>
+            <a href="#install-terminal-commands">Install Terminal Commands</a>
         </li>
         <li>
-            <a href="#Step-2">Subject Here</a>
+            <a href="#section-two">Subject Here</a>
         </li>
     </ol>
 </details>
 
 ---
 
-## Step 1
-
-### Install Terminal Commands
+## Install Terminal Commands
 
 > Description Here
 
