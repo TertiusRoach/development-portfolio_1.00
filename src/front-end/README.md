@@ -1,4 +1,4 @@
-# Front-end Development
+# Front-end Documentation
 
 <!--|▶| Table of Contents |◀|-->
 <details>
