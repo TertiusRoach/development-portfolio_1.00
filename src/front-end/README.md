@@ -1,9 +1,5 @@
 # Front-end Documentation
 
-Outlined below is my front-end development process, covering crucial links, resources, and terminal commands for installing key packages vital to my workflow. I use [Gulp](https://en.wikipedia.org/wiki/Gulp.js) for seamless task automation to optimize repetitive processes. [Sass](<https://en.wikipedia.org/wiki/Sass_(style_sheet_language)>) acts as a styling tool to improve syntax readability, while [Bootstrap](<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>) enhances the visual appeal of the interface. [jQuery](https://en.wikipedia.org/wiki/JQuery) streamlines DOM manipulation while [TypeScript](https://en.wikipedia.org/wiki/TypeScript) helps with code scalability, readability, and maintainability. This ensures efficiency, flexibility, and a polished user experience for the applications I build.
-
-<!-- --- -->
-
 <details>
   <summary>Table of Contents</summary>
     <ol>
@@ -19,6 +15,8 @@ Outlined below is my front-end development process, covering crucial links, reso
 <!-- --- -->
 
 ## Project Installation
+
+Outlined below is my front-end development process, covering crucial links, resources, and terminal commands for installing key packages vital to my workflow. I use [Gulp](https://en.wikipedia.org/wiki/Gulp.js) for seamless task automation to optimize repetitive processes. [Sass](<https://en.wikipedia.org/wiki/Sass_(style_sheet_language)>) acts as a styling tool to improve syntax readability, while [Bootstrap](<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>) enhances the visual appeal of the interface. [jQuery](https://en.wikipedia.org/wiki/JQuery) streamlines DOM manipulation while [TypeScript](https://en.wikipedia.org/wiki/TypeScript) helps with code scalability, readability, and maintainability. This ensures efficiency, flexibility, and a polished user experience for the applications I build.
 
 > 🠋 Executing this terminal command generates a [package.json](https://nodejs.org/en) file.
 
