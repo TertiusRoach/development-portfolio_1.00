@@ -1,4 +1,4 @@
-# Front-end Instructions
+# [Front-end Instructions](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end)
 
 **Description Here**
 
@@ -8,22 +8,13 @@
 
 > Before proceeding with the terminal commands outlined below, ensure that you have successfully installed Node.js.
 
----
-
     npm init -y
-
----
 
     npm install gulp
     npm install sass
     npm install jquery
-    npm install bcrypt
-    npm install express
-    npm install mongodb
     npm install bootstrap
     npm install typescript
-
----
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
@@ -39,12 +30,8 @@
     npm install --save-dev gulp-string-replace
     npm install --save-dev gulp-remove-html-comments
 
----
-
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
     npm install --save-dev @google/clasp
-
----
 
 ### Step 0: Visual Code Extensions
