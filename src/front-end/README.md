@@ -1,64 +1,33 @@
 # Front-end Documentation
 
-Outlined below is my front-end development process, presenting essential details including crucial links, valuable resources, and necessary terminal commands for installing key packages pivotal to optimizing my workflow. These meticulously curated elements serve as the foundation of my development environment, guaranteeing a streamlined and efficient process throughout the entire lifecycle from conception to implementation.
+I've noticed a trend in my recent professional life where I haven't been actively engaging in coding projects, despite my initial enthusiasm for constructing intricate applications. This lack of hands-on development has left me feeling somewhat unfulfilled, as if I'm not actively pursuing a meaningful goal or contributing to my personal growth through creative endeavors.
+
+Recognizing the positive impact that crafting things has on my overall well-being, I've decided to address this by curating a portfolio that showcases my coding skills and project accomplishments. While I still find value in following tutorials, the absence of tangible, substantial projects leaves me feeling like my efforts are not yielding the desired results.
+
+One area where I've identified a gap in my experience is the absence of a comprehensive project that truly challenges my coding abilities. I've successfully navigated through tutorials and learned how to structure pages within a single project, but I haven't taken that knowledge to the next level by tackling a substantial and complex assignment.
+
+This portfolio represents a commitment to rectify that situation. It's my opportunity to demonstrate not only my technical proficiency but also my ability to tackle significant coding challenges. By immersing myself in this ambitious project, I hope to occupy my mind during periods when I have no formal plans, ensuring that I make the most of my downtime outside of work.
+
+I acknowledge that not everyone has the luxury of dedicating time to such endeavors due to various circumstances. Still, I realize that I possess the capacity to do so, and I'm determined to leverage this opportunity to enhance my skills and contribute meaningfully to my personal and professional growth. So, I encourage myself to take the time needed for this endeavor, recognizing it as a valuable investment in my development as a coder and individual.
 
 ---
 
-<details>
-  <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#project-installation">Project Installation</a>
-        </li>
-        <li>
-            <a href="#subject-here">Subject Here</a>
-        </li>
-    </ol>
-</details>
+# Assets
+
+[Node.js](https://nodejs.org/en)
 
 ---
 
-## Project Installation
+[README.md](https://www.markdownguide.org/cheat-sheet/)
 
-To utilize the command terminals listed below, ensure you have [Node.js](https://nodejs.org/en) installed. I employ [Gulp](https://en.wikipedia.org/wiki/Gulp.js) for seamless task automation, optimizing repetitive processes. [Sass](<https://en.wikipedia.org/wiki/Sass_(style_sheet_language)>) serves as a styling tool, enhancing syntax readability, while [Bootstrap](<https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)>) elevates the visual appeal of the interface. [jQuery](https://en.wikipedia.org/wiki/JQuery) streamlines DOM manipulation, and [TypeScript](https://en.wikipedia.org/wiki/TypeScript) contributes to code scalability, readability, and maintainability. This approach ensures efficiency, flexibility, and a polished user experience in the applications I develop.
+[README.md Template](https://github.com/othneildrew/Best-README-Template)
 
-> 🠋 Executing this terminal command generates a [package.json](https://nodejs.org/en) file.
+---
 
-    npm init -y
+[Design Syntax](https://www.compart.com/en/unicode/block/U+25A0)
+[🠉](https://www.compart.com/en/unicode/U+1F809)
+[🠊](https://www.compart.com/en/unicode/U+1F80A)
+[🠋](https://www.compart.com/en/unicode/U+1F80B)
+[🠈](https://www.compart.com/en/unicode/U+1F808)
 
-> 🠋 These are the primary packages used in this project.
-
-    npm install gulp
-    npm install sass
-    npm install jquery
-    npm install bcrypt
-    npm install express
-    npm install mongodb
-    npm install bootstrap
-    npm install typescript
-
-> 🠋 The [gulpfile.js](https://marketplace.visualstudio.com/items?itemName=nickdodd79.gulptasks) document encodes and transfers development files from source to distribution.
-
-    npm install --save-dev gulp
-    npm install --save-dev gulp-sass
-    npm install --save-dev gulp-clean
-    npm install --save-dev gulp-concat
-    npm install --save-dev gulp-uglify
-    npm install --save-dev gulp-rename
-    npm install --save-dev gulp-htmlmin
-    npm install --save-dev gulp-uglifycss
-    npm install --save-dev gulp-typescript
-    npm install --save-dev gulp-sourcemaps
-    npm install --save-dev gulp-delete-file
-    npm install --save-dev gulp-string-replace
-    npm install --save-dev gulp-remove-html-comments
-
-> 🠋 These packages are currently optional for development but add value to the process.
-
-    npm install --save-dev nodemon
-    npm install --save-dev @types/jquery
-    npm install --save-dev @google/clasp
-
-## Subject Here
-
-Description Here
+---
