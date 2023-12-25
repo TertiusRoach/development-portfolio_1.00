@@ -3,13 +3,14 @@
 <!--|▶| Table of Contents |◀|-->
 <details>
   <summary><h1>Table of Contents<h1></summary>
-  <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    
+  <!-- <ol>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -23,7 +24,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+  </ol> -->
 </details>
 
 ---
