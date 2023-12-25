@@ -10,6 +10,8 @@
 
 ---
 
+<!-- ABOUT THE PROJECT -->
+
 ## Section 1: Subject Here
 
 ## Section 2: Install Terminal Commands
