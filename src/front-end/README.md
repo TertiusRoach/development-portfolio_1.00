@@ -6,14 +6,14 @@ Outlined below is my front-end development process, covering crucial links, reso
 
 <details>
   <summary>Table of Contents</summary>
-    <ul>
+    <ol>
         <li>
             <a href="#project-installation">Project Installation</a>
         </li>
         <li>
             <a href="#subject-here">Subject Here</a>
         </li>
-    </ul>
+    </ol>
 </details>
 
 <!-- --- -->
