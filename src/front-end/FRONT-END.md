@@ -2,9 +2,11 @@
 
 **Description Here**
 
-## Step 1: Install Terminal Commands
+### Step 0: Install Software
 
-Before proceeding with the terminal commands outlined below, ensure that you have successfully installed Node.js.
+### Step 0: Install Terminal Commands
+
+> Before proceeding with the terminal commands outlined below, ensure that you have successfully installed Node.js.
 
 ---
 
@@ -44,3 +46,5 @@ Before proceeding with the terminal commands outlined below, ensure that you hav
     npm install --save-dev @google/clasp
 
 ---
+
+### Step 0: Visual Code Extensions
