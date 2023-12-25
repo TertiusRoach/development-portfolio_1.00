@@ -12,8 +12,6 @@
     </ul>
 </details>
 
----
-
 ## Terminal Installations
 
 > 🠋 Executing this terminal command generates a [package.json](https://nodejs.org/en) file.
