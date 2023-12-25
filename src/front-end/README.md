@@ -8,7 +8,7 @@ This readme serves as a guide to delineate my personalized front-end development
   <summary>Table of Contents</summary>
     <ol>
         <li>
-            <a href="#folder-organization">Folder Organization</a>
+            <a href="#folder-structure">Folder Structure</a>
         </li>
         <li>
             <a href="#subject-here">Subject Here</a>
@@ -18,7 +18,7 @@ This readme serves as a guide to delineate my personalized front-end development
 
 ---
 
-# Folder Organization
+# Folder Structure
 
 This is specific to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure.
 
