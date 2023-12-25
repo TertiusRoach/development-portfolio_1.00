@@ -16,14 +16,14 @@
 
 ## Terminal Installations
 
-> 🠋 Executing this terminal command initializes a new [Node.js](https://nodejs.org/en) project by generating a "package.json" file.
+> 🠋 Executing this terminal command initializes a new [_Node.js_](https://nodejs.org/en) project by generating a "package.json" file.
 
     npm init -y
 
 > 🠋 These constitute the primary packages employed in this project.
 
     npm install gulp
-    [npm install sass](https://en.wikipedia.org/wiki/Sass_(style_sheet_language))
+    npm install sass
     npm install jquery
     npm install bcrypt
     npm install express
