@@ -4,7 +4,7 @@
   <summary><h2>Table of Contents</h2></summary>
     <ul>
         <li>
-            <a href="#install-terminal-commands">Install Terminal Commands</a>
+            <a href="#terminal-installations">Terminal Installations</a>
         </li>
         <li>
             <a href="#subject-here">Subject Here</a>
@@ -14,7 +14,7 @@
 
 ---
 
-## Install Terminal Commands
+## Terminal Installations
 
 Description Here
 
