@@ -16,13 +16,16 @@
 
 ## Terminal Installations
 
-Description Here
+[🠉](https://www.compart.com/en/unicode/U+1F809)
+[🠊](https://www.compart.com/en/unicode/U+1F80A)
+[🠋](https://www.compart.com/en/unicode/U+1F80B)
+[🠈](https://www.compart.com/en/unicode/U+1F808)
 
-> Clarification Here
+> 🠋 Executing this terminal command initializes a new Node.js project by generating a "package.json" file.
 
     npm init -y
 
-> Clarification Here
+> 🠋 These constitute the primary packages employed in this project.
 
     npm install gulp
     npm install sass
@@ -33,7 +36,7 @@ Description Here
     npm install bootstrap
     npm install typescript
 
-> Clarification Here
+> 🠋 These are all the commands used by `gulpfile.js` files.
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
@@ -49,7 +52,7 @@ Description Here
     npm install --save-dev gulp-string-replace
     npm install --save-dev gulp-remove-html-comments
 
-> Clarification Here
+> 🠋 Clarification Here
 
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
