@@ -1,5 +1,7 @@
 # [Front-end Instructions](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end)
 
+---
+
 **Description Here**
 
 ### Step 0: Install Software
