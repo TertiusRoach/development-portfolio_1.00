@@ -5,7 +5,7 @@
             <a href="#install-terminal-commands">Install Terminal Commands</a>
         </li>
         <li>
-            <a href="#section-two">Subject Here</a>
+            <a href="#subject-here">Subject Here</a>
         </li>
     </ul>
 </details>
@@ -14,11 +14,13 @@
 
 ## Install Terminal Commands
 
-> Description Here
+Description Here
+
+> Clarification Here
 
     npm init -y
 
-> Description Here
+> Clarification Here
 
     npm install gulp
     npm install sass
@@ -29,7 +31,7 @@
     npm install bootstrap
     npm install typescript
 
-> Description Here
+> Clarification Here
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
@@ -45,7 +47,7 @@
     npm install --save-dev gulp-string-replace
     npm install --save-dev gulp-remove-html-comments
 
-> Description Here
+> Clarification Here
 
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
@@ -53,26 +55,8 @@
 
 ---
 
-## Step 2
+## Subject Here
 
-### Subject Here
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Description Here
 
 ---
-
-## Section 1: Subject Here
-
-### Step 0: Visual Code Extensions
