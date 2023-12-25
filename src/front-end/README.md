@@ -23,12 +23,7 @@ This readme serves as a guide to delineate my personalized front-end development
 
 ## Folder Structure
 
-This is specific to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure.
-
-The guidance on recommended resolutions for various file formats are also sampled inside ~content folder to, offering insights into the reasoning behind specific image resolutions for consistency. With a focus on clear navigation and detailed references for each file format, this document is meticulously crafted to enhance the efficiency and quality of the front-end development process.
-
-to make for scalable projects.
-sizes and specifications
+This pertains specifically to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure. Insightful recommendations on optimal resolutions for different file formats are also provided within the ~content folder, offering a rationale for specific image resolutions to maintain consistency. Crafted with meticulous attention to detail, this document emphasizes clear navigation and provides comprehensive references for each file format, contributing to an elevated efficiency and quality in the front-end development process.
 
 ## Default Resolutions
 
