@@ -1,7 +1,7 @@
 # Front-end Documentation
 
 <details>
-  <summary><h2>Table of Contents</h2></summary>
+  <summary>Table of Contents</summary>
     <ul>
         <li>
             <a href="#terminal-installations">Terminal Installations</a>
