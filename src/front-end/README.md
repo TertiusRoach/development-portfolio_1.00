@@ -1,13 +1,13 @@
 <details>
   <summary><h1>Front-end Documentation</h1></summary>
-    <ol>
+    <ul>
         <li>
             <a href="#install-terminal-commands">Install Terminal Commands</a>
         </li>
         <li>
             <a href="#section-two">Subject Here</a>
         </li>
-    </ol>
+    </ul>
 </details>
 
 ---
