@@ -10,6 +10,14 @@ This portfolio represents a commitment to rectify that situation. It's my opport
 
 I acknowledge that not everyone has the luxury of dedicating time to such endeavors due to various circumstances. Still, I realize that I possess the capacity to do so, and I'm determined to leverage this opportunity to enhance my skills and contribute meaningfully to my personal and professional growth. So, I encourage myself to take the time needed for this endeavor, recognizing it as a valuable investment in my development as a coder and individual.
 
+## Front-end Explanation
+
+Front-end development refers to the practice of creating and implementing the visual and interactive elements of a website or web application that users directly interact with. It involves the use of programming languages such as HTML, CSS, and JavaScript to build the user interface and enhance the overall user experience. Front-end developers focus on designing and developing the layout, structure, and styling of a website, ensuring that it is visually appealing, responsive, and functional across various devices and browsers. They collaborate closely with designers to bring visual concepts to life and with back-end developers to integrate front-end components with server-side logic. Front-end development plays a crucial role in shaping the look and feel of digital products, making them user-friendly and engaging.
+
+## Back-end Explanation
+
+Back-end development refers to the process of building and maintaining the server-side of a website or web application. It involves designing, implementing, and managing the server, databases, and application logic that enable the functionality and data management of the system. Back-end developers work with server-side languages such as Python, Ruby, PHP, and Java, as well as frameworks like Django, Ruby on Rails, and Laravel. Their primary focus is on ensuring that data is securely stored, retrieved, and processed, and they are responsible for managing server infrastructure, databases, and server-side application code. Back-end development is integral to the overall functionality of a website, handling tasks such as database management, user authentication, and server-side processing, which contribute to the seamless functioning of the entire web application.
+
 ---
 
 [Node.js](https://nodejs.org/en)
