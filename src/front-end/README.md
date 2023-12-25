@@ -3,13 +3,17 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#section-0:">About The Project</a>
-    </li>
+    <ol>
+            <li>
+            <a href="#Step-0">Install Applications</a>
+        </li>
+        <li>
+            <a href="#Step-0">Install Applications</a>
+        </li>
+    </ol>
 </details>
 
-## Section 0:
+## Section 0
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
