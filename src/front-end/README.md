@@ -41,6 +41,9 @@
     npm install gulp
     npm install sass
     npm install jquery
+    npm install bcrypt
+    npm install express
+    npm install mongodb
     npm install bootstrap
     npm install typescript
 
