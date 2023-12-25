@@ -1,4 +1,4 @@
-# [Front-end Instructions]()
+# Front-end Development
 
 <!-- TABLE OF CONTENTS -->
 <details>
