@@ -32,17 +32,19 @@ sizes and specifications
 
 ## Default Resolutions
 
-filename.ico 🠊 256x256
+[sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256
 
-filename.gif 🠊 500x500
+[sample-content.gif](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/gif-files) 🠊 500x500
 
-filename.svg 🠊 500x500
+[sample-content.svg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/svg-files) 🠊 500x500
 
-filename.jpg 🠊 1280x720 **(720p)**
+[sample-content.jpg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/jpg-files) 🠊 1280x720 **(720p)**
 
-filename.mp4 🠊 1920x1080 **(1080p, 25fps)**
+[sample-content.mp4](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/mp4-files) 🠊 1920x1080 **(1080p, 25fps)**
 
-filename.png 🠊 3840x2160 **(2160p)**
+[sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 **(2160p)**
+
+[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
 
 ## Subject Here
 
