@@ -10,9 +10,9 @@
 
 ---
 
-### Section 1: Subject Here
+## Section 1: Subject Here
 
-### Section 2: Install Terminal Commands
+## Section 2: Install Terminal Commands
 
 > Description Here
 
