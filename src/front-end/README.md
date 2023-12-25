@@ -2,6 +2,8 @@
 
 Outlined below is my front-end development process, presenting essential details including crucial links, valuable resources, and necessary terminal commands for installing key packages pivotal to optimizing my workflow. These meticulously curated elements serve as the foundation of my development environment, guaranteeing a streamlined and efficient process throughout the entire lifecycle from conception to implementation.
 
+---
+
 <details>
   <summary>Table of Contents</summary>
     <ol>
@@ -14,7 +16,7 @@ Outlined below is my front-end development process, presenting essential details
     </ol>
 </details>
 
-<!-- --- -->
+---
 
 ## Project Installation
 
@@ -56,8 +58,6 @@ To utilize the command terminals listed below, ensure you have [Node.js](https:/
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
     npm install --save-dev @google/clasp
-
-<!-- --- -->
 
 ## Subject Here
 
