@@ -47,7 +47,7 @@
     npm install --save-dev gulp-string-replace
     npm install --save-dev gulp-remove-html-comments
 
-> 🠋 Clarification Here
+> 🠋 These packages are currently optional for development but add value to the process.
 
     npm install --save-dev nodemon
     npm install --save-dev @types/jquery
