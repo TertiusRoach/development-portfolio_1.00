@@ -1,0 +1,63 @@
+.gradient-main {
+  display: flex;
+  .background {
+    //--► background: green; ◄--//
+    background: radial-gradient(circle, $primary-medium, $primary-dark 95%);
+    .gradient-one span {
+      //--► background: red; ◄--//
+      background: linear-gradient(to top right, $primary-medium, $primary-dark);
+    }
+    .gradient-two span {
+      animation-delay: 60s;
+      //--► background: black; ◄--//
+      background: linear-gradient(to bottom right, $primary-medium, $primary-dark);
+    }
+    .gradient-three span {
+      animation-delay: 120s;
+      //--► background: blue; ◄--//
+      background: linear-gradient(to bottom left, $primary-medium, $primary-dark);
+    }
+    .gradient-four span {
+      animation-delay: 180s;
+      //--► background: white; ◄--//
+      background: linear-gradient(to top left, $primary-medium, $primary-dark);
+    }
+  }
+  section {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+    div[class*='gradient'] {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      span {
+        height: 100%;
+        display: flex;
+        animation-name: fadeOut;
+        animation-duration: 60s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  //--▼ Desktop (Landscape) ▼--//
+  @media screen and (orientation: landscape) {
+    grid-row: 1/15;
+    grid-column: 1/29;
+  }
+  //--▼ Mobile (Portrait) ▼--//
+  @media screen and (orientation: portrait) {
+    grid-row: 1/29;
+    grid-column: 1/15;
+  }
+}

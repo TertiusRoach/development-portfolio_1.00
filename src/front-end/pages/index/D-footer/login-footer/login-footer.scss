@@ -1,0 +1,16 @@
+.login-footer {
+  width: 100%;
+  display: inline;
+  overflow: hidden;
+  background: $primary-dark;
+  border-radius: 0 0 1em 1em; //--◄ Top-left, Top-Right, Bottom-right, Bottom-left ◄--//
+  section {
+    display: none;
+  }
+  section[class*='active'] {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
