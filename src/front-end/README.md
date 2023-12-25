@@ -3,12 +3,13 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
+  <ol>
     <li>
-      <a href="#section-0:-subject-here">Section 0: Subject Here</a>
+      <a href="#section-0">About The Project</a>
     </li>
 </details>
 
-## Section 0: Subject Here
+## Section 0
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
