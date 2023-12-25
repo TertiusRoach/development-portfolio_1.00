@@ -24,7 +24,7 @@ Outlined below is my front-end development process, covering crucial links, reso
 
     npm init -y
 
-> 🠋 These constitute the primary packages employed in this project.
+> 🠋 These are the primary packages used in this project.
 
     npm install gulp
     npm install sass
@@ -35,7 +35,7 @@ Outlined below is my front-end development process, covering crucial links, reso
     npm install bootstrap
     npm install typescript
 
-> 🠋 The [gulpfile.js](https://marketplace.visualstudio.com/items?itemName=nickdodd79.gulptasks) document transfers source files from source to distribution.
+> 🠋 The [gulpfile.js](https://marketplace.visualstudio.com/items?itemName=nickdodd79.gulptasks) document encodes and transfers development files from source to distribution.
 
     npm install --save-dev gulp
     npm install --save-dev gulp-sass
