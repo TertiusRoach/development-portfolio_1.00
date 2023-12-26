@@ -22,13 +22,10 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
             <a href="#content-directory">Content Directory</a>
         </li>
         <li>
-            <a href="#my-checklist">My Checklist</a>
-        </li>
-        <li>
-            <a href="#default-resolutions">Default Resolutions</a>
-        </li>
-        <li>
             <a href="#subject-here">Subject Here</a>
+        </li>
+        <li>
+            <a href="#my-checklist">My Checklist</a>
         </li>
     </ol>
 </details>
