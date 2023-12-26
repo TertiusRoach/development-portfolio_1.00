@@ -34,7 +34,7 @@ This pertains specifically to the [front-end](https://github.com/TertiusRoach/de
 - [x] Copy HTML with Gulp
 - [x] Compile SASS with Gulp
 - [ ] Compile TypeScript with Gulp
-- [ ] Try Webpack instead of RequireJS
+- [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
 
 ## Default Resolutions
 
