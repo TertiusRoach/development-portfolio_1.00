@@ -80,6 +80,8 @@ Each file format has a distinct purpose, and through experience, I've discovered
 
 Description Here
 
+---
+
 ### My Checklist
 
 - [x] Get Gulp to work
