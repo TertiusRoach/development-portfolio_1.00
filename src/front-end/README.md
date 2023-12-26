@@ -76,6 +76,10 @@ Each file format has a distinct purpose, and through experience, I've discovered
 
 ---
 
+## Subject Here
+
+Description Here
+
 ### My Checklist
 
 - [x] Get Gulp to work
@@ -94,7 +98,3 @@ Each file format has a distinct purpose, and through experience, I've discovered
 [🠈](https://www.compart.com/en/unicode/U+1F808)
 
 ---
-
-## Subject Here
-
-Description Here
