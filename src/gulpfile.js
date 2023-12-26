@@ -5,6 +5,7 @@ const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
+const gap = require('gulp-append-prepend');
 const uglifycss = require('gulp-uglifycss');
 const sourcemaps = require('gulp-sourcemaps');
 const typescript = require('gulp-typescript');
@@ -34,7 +35,7 @@ const copyHTML = (pageName) => {
     .pipe(gulp.dest('src/../'));
 
   //--🠋 Copy all HTML files into distributable folder 🠋--//
-  let sourceFolders = ['A-body', 'B-overlay', 'C-header', 'D-footer', 'E-leftbar', 'F-rightbar', 'G-main', 'H-data'];
+  const sectionFolders = ['A-body', 'B-overlay', 'C-header', 'D-footer', 'E-leftbar', 'F-rightbar', 'G-main', 'H-data'];
   let copyHTML = (item, index, array) => {
     gulp
       //--| Find *.html files in the source folder |--//
@@ -43,13 +44,15 @@ const copyHTML = (pageName) => {
       .pipe(htmlmin({ collapseWhitespace: true }))
       //--| Copy the *.html files into distribution folder |--//
       .pipe(gulp.dest(`dist/front-end/pages/${pageName}/${array[index]}/`));
+
+    console.log(`|🠊 Copied ${array[index]}`);
   };
-  sourceFolders.forEach(copyHTML);
+  sectionFolders.forEach(copyHTML);
 };
 
 const compileSASS = (pageName) => {
+  //--🠋 Combine all *.scss files 🠋--//
   let concatenate = (pageName) => {
-    //--🠋 Concatenate all *.scss files 🠋--//
     gulp
       //--| Find all the *.scss files |--//
       .src([
@@ -66,11 +69,13 @@ const compileSASS = (pageName) => {
       ])
       //--| Combine the selected *.scss files |--//
       .pipe(concat('style.scss'))
-      //--| Save the *.scss file inside source folder |--//
+      //--| Export the combined files as style.scss |--//
       .pipe(dest('../'));
+
+    console.log(`|🠊 Merged SASS stylesheets for ${pageName}.html`);
   };
 
-  //--🠋 Create style.css File 🠋--//
+  //--🠋 Create style.css file 🠋--//
   let compile = (pageName) => {
     gulp
       //--| Select style.scss |--//
@@ -84,13 +89,16 @@ const compileSASS = (pageName) => {
           uglyComments: true,
         })
       )
-      //--| Distribute CSS file for HTML |--//
+      //--| Distribute the style.css file |--//
       .pipe(dest(`dist/front-end/pages/${pageName}/`));
+
+    console.log(`|🠊 Converted SASS to CSS for ${pageName}.html`);
   };
 
-  //--🠋 Delete style.scss inside local folder 🠋--//
+  //--🠋 Delete style.scss 🠋--//
   let remove = () => {
     gulp
+      //--| The style.scss file is stored in the root parent |--//
       .src(['../style.scss'])
       //--| Delete style.scss file using Regex |--//
       .pipe(
@@ -99,12 +107,29 @@ const compileSASS = (pageName) => {
           deleteMatch: false,
         })
       );
+
+    console.log(`|🠊 Deleted concatenated SASS document for ${pageName}.html`);
+  };
+
+  //--🠋 Add Bootstrap to style.css 🠋--//
+  let prepend = (pageName) => {
+    gulp
+      .src([`dist/front-end/pages/${pageName}/style.css`])
+      //--| Remove @charset "UTF-8"; |--//
+      .pipe(replace('@charset "UTF-8";', ''))
+      //--| Get Bootstrap file and add to style.css |--//
+      .pipe(gap.prependFile('src/front-end/vendors/bootstrap/5.3.2/css/bootstrap.min.css'))
+      //--| Save style.css with Bootstrap |--//
+      .pipe(dest(`dist/front-end/pages/${pageName}/`));
+
+    console.log(`|🠊 Bootstrap added to style.css for ${pageName}.html`);
   };
 
   //--🠋 Execute functions asynchronously 🠋--//
   concatenate(pageName);
-  setTimeout(compile, 5000, pageName);
-  setTimeout(remove, 10000, pageName);
+  setTimeout(compile, 2500, pageName);
+  setTimeout(remove, 5000);
+  setTimeout(prepend, 7500, pageName);
 };
 
 /*
