@@ -11,15 +11,15 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
             <a href="#pages-folder">Pages Folder</a>
             <ul>
                 <li>
-                    <a href="#corporate-identity">Corporate Identity</a>
-                </li>
-                <li>
-                    <a href="#content-directory">Content Directory</a>
-                </li>
-                <li>
                     <a href="#global-styling">Global Styling</a>
                 </li>
+                <li>
+                    <a href="#corporate-identity">Corporate Identity</a>
+                </li>
             </ul>
+        </li>
+        <li>
+            <a href="#content-directory">Content Directory</a>
         </li>
         <li>
             <a href="#my-checklist">My Checklist</a>
@@ -39,13 +39,17 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
 
 This specifically concerns the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure. The [page directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages) is at the heart of front-end functionality, and the [index](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index) folder serves as the default testing location. The **~content** folder offers insightful recommendations on optimal resolutions for various file formats, providing rationale for specific image resolutions to maintain consistency. Crafted with meticulous attention to detail, this document prioritizes clear navigation and delivers comprehensive references for each file format, contributing to heightened efficiency and quality in the front-end development process.
 
+### Global Styling
+
+This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
+
 ### Corporate Identity
 
 This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/corporate-identity.scss) encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
 
 ---
 
-### [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
+## [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
@@ -74,10 +78,6 @@ Each file format has a distinct purpose, and through experience, I've discovered
 **sample-content.png 🠊 3840x2160 (2160p)**
 
 ---
-
-### Global Styling
-
-This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
 
 ### My Checklist
 
