@@ -29,7 +29,15 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
 
 ## Pages Folder
 
-The [page](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages) directory is the bread and butter of this whole operation. The default folder used for testing is the [index](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index) folder. There's also two additional SASS files namely, **corporate-identity.css** & **global-styling.css**.
+The [page directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages) forms the core of the front-end functionality. The default testing folder is [index](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index).
+
+### Corporate Identity
+
+This SASS file encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
+
+### Global Styling
+
+This SASS file acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
 
 ## Folder Structure
 
