@@ -47,10 +47,6 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
-### Global Styling
-
-This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
-
 > 🠋 Ideal for small graphical representations, typically used as website or application icons.
 
 [sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256
@@ -78,6 +74,10 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 > 🠋 Preserves layers and editing capabilities, making it the go-to format for graphic designers and collaborative editing in Adobe Photoshop.
 
 [Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
+
+### Global Styling
+
+This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
 
 ### My Checklist
 
