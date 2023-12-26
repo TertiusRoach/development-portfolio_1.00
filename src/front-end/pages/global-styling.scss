@@ -72,6 +72,7 @@ input[class*='form-control']:active {
 input[class*='form-control']::placeholder {
   color: $primary-medium;
 }
+
 /*
   border-radius: 0 0 8px 8px; //--◄ Top-left, Top-Right, Bottom-right, Bottom-left ◄--//
   background-color: $primary-dark;
