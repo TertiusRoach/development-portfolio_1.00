@@ -49,28 +49,28 @@ const copyHTML = (pageName) => {
 };
 
 const compileSASS = (pageName) => {
-  // let concatenate = (pageName) => {
-  //   //--🠋 Concatenate all *.scss files 🠋--//
-  //   gulp
-  //     //--| Find all the *.scss files |--//
-  //     .src([
-  //       // 'src/front-end/pages/corporate-identity.scss',
-  //       `src/front-end/pages/${pageName}/A-body/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/B-overlay/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/C-header/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/D-footer/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/E-leftbar/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/F-rightbar/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/G-main/**/*.scss`,
-  //       `src/front-end/pages/${pageName}/H-data/**/*.scss`,
-  //       // 'src/front-end/global-styling.scss',
-  //     ])
-  //     //--| Combine the selected *.scss files |--//
-  //     .pipe(concat('style.scss'))
-  //     //--| Save the *.scss file inside source folder |--//
-  //     .pipe(dest(`src/front-end/pages/${pageName}/`));
-  // };
-  // concatenate(pageName);
+  //--🠋 Concatenate all *.scss files 🠋--//
+  let concatenate = (pageName) => {
+    gulp
+      //--| Find all the *.scss files |--//
+      .src([
+        'src/front-end/pages/corporate-identity.scss',
+        `src/front-end/pages/${pageName}/A-body/**/*.scss`,
+        `src/front-end/pages/${pageName}/B-overlay/**/*.scss`,
+        `src/front-end/pages/${pageName}/C-header/**/*.scss`,
+        `src/front-end/pages/${pageName}/D-footer/**/*.scss`,
+        `src/front-end/pages/${pageName}/E-leftbar/**/*.scss`,
+        `src/front-end/pages/${pageName}/F-rightbar/**/*.scss`,
+        `src/front-end/pages/${pageName}/G-main/**/*.scss`,
+        `src/front-end/pages/${pageName}/H-data/**/*.scss`,
+        'src/front-end/pages/global-styling.scss',
+      ])
+      //--| Combine the selected *.scss files |--//
+      .pipe(concat('style.scss'))
+      //--| Save the *.scss file inside source folder |--//
+      .pipe(dest(`src/front-end/pages/${pageName}/`));
+  };
+  concatenate(pageName);
 
   //--🠋 Compile style.scss 🠋--//
   let compile = (pageName) => {
@@ -89,8 +89,7 @@ const compileSASS = (pageName) => {
       //--| Distribute CSS file for HTML |--//
       .pipe(dest(`dist/front-end/pages/${pageName}/`));
   };
-  compile(pageName);
-  // setTimeout(compile, 5000, pageName);
+  setTimeout(compile, 5000, pageName);
 
   /*
   //--🠋 Delete style.scss 🠋--//
@@ -107,7 +106,6 @@ const compileSASS = (pageName) => {
   };
 */
   //--🠋 Execute functions asynchronously 🠋--//
-
   // setTimeout(concatenate, 1000, pageName);
   // setTimeout(compile, 5000, pageName);
   // setTimeout(remove, 10000, pageName);
