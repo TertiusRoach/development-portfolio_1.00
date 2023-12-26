@@ -66,13 +66,13 @@ Each file format has a distinct purpose, and through experience, I've discovered
 
 **sample-content.jpg 🠊 1280x720 (720p)**
 
-> 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
-
-**sample-content.mp4 🠊 1920x1080 (1080p, 25fps)**
-
 > 🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
 **sample-content.png 🠊 3840x2160 (2160p)**
+
+> 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
+
+**sample-content.mp4 🠊 1920x1080 (1080p, 25fps)**
 
 ---
 
