@@ -32,7 +32,7 @@ This pertains specifically to the [front-end](https://github.com/TertiusRoach/de
 
 - [x] Get Gulp to work
 - [x] Copy HTML with Gulp
-- [ ] Compile SASS with Gulp
+- [x] Compile SASS with Gulp
 - [ ] Compile TypeScript with Gulp
 - [ ] Try Webpack instead of RequireJS
 
