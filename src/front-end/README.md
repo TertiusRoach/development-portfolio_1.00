@@ -73,7 +73,7 @@ Each file format has a distinct purpose, and through experience, I've discovered
 
 > 🠋 Consider [GIMP](https://www.gimp.org/) as a powerful alternative to Photoshop.
 
-**[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)**
+==[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)==
 
 ### Global Styling
 
