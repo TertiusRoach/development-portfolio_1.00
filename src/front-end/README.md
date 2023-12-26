@@ -43,6 +43,8 @@ This specifically concerns the [front-end](https://github.com/TertiusRoach/devel
 
 This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/corporate-identity.scss) encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
 
+---
+
 ### [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
@@ -70,6 +72,8 @@ Each file format has a distinct purpose, and through experience, I've discovered
 > 🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
 **sample-content.png 🠊 3840x2160 (2160p)**
+
+---
 
 ### Global Styling
 
