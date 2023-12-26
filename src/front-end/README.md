@@ -41,7 +41,7 @@ This specifically concerns the [front-end](https://github.com/TertiusRoach/devel
 
 ### Corporate Identity
 
-This [SASS file]() encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
+This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/corporate-identity.scss) encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
 
 ### [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
