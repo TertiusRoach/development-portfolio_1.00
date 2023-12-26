@@ -14,10 +14,10 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
                     <a href="#corporate-identity">Corporate Identity</a>
                 </li>
                 <li>
-                    <a href="#global-styling">Global Styling</a>
+                    <a href="#content-directory">Content Directory</a>
                 </li>
                 <li>
-                    <a href="#content-directory">Content Directory</a>
+                    <a href="#global-styling">Global Styling</a>
                 </li>
             </ul>
         </li>
@@ -43,13 +43,13 @@ This specifically concerns the [front-end](https://github.com/TertiusRoach/devel
 
 This [SASS file]() encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
 
-### Global Styling
-
-This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
-
 ### [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
+
+### Global Styling
+
+This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/global-styling.scss) acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
 
 > 🠋 Ideal for small graphical representations, typically used as website or application icons.
 
