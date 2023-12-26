@@ -9,9 +9,17 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
     <ol>
         <li>
             <a href="#pages-folder">Pages Folder</a>
-        </li>
-        <li>
-            <a href="#folder-structure">Folder Structure</a>
+            <ul>
+                <li>
+                    <a href="#corporate-identity">Corporate Identity</a>
+                </li>
+                <li>
+                    <a href="#global-styling">Global Styling</a>
+                </li>
+                <li>
+                    <a href="#content-directory">Content Directory</a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="#my-checklist">My Checklist</a>
@@ -29,7 +37,7 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
 
 ## Pages Folder
 
-The [page directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages) forms the core of the front-end functionality. The default testing folder is [index](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index).
+This specifically concerns the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure. The [page directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages) is at the heart of front-end functionality, and the [index](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index) folder serves as the default testing location. The [~content](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content) folder offers insightful recommendations on optimal resolutions for various file formats, providing rationale for specific image resolutions to maintain consistency. Crafted with meticulous attention to detail, this document prioritizes clear navigation and delivers comprehensive references for each file format, contributing to heightened efficiency and quality in the front-end development process.
 
 ### Corporate Identity
 
@@ -39,9 +47,37 @@ This SASS file encapsulates the default values for a company's registered colors
 
 This SASS file acts as an override, enabling the modification of specific designs within the Bootstrap framework. A foundational structure is already established, providing flexibility in adjusting default values.
 
-## Folder Structure
+### Content Directory
 
-This pertains specifically to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure. Insightful recommendations on optimal resolutions for different file formats are also provided within the [~content](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content) folder, offering a rationale for specific image resolutions to maintain consistency. Crafted with meticulous attention to detail, this document emphasizes clear navigation and provides comprehensive references for each file format, contributing to an elevated efficiency and quality in the front-end development process.
+Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
+
+> 🠋 Ideal for small graphical representations, typically used as website or application icons.
+
+[sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256
+
+> 🠋 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
+
+[sample-content.gif](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/gif-files) 🠊 500x500
+
+> 🠋 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
+
+[sample-content.svg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/svg-files) 🠊 500x500
+
+> 🠋 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
+
+[sample-content.jpg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/jpg-files) 🠊 1280x720 **(720p)**
+
+> 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
+
+[sample-content.mp4](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/mp4-files) 🠊 1920x1080 **(1080p, 25fps)**
+
+> 🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
+
+[sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 **(2160p)**
+
+> 🠋 Preserves layers and editing capabilities, making it the go-to format for graphic designers and collaborative editing in Adobe Photoshop.
+
+[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
 
 ### My Checklist
 
@@ -51,22 +87,6 @@ This pertains specifically to the [front-end](https://github.com/TertiusRoach/de
 - [x] Combine Bootstrap with Stylesheet using Gulp
 - [ ] Compile TypeScript with Gulp
 - [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
-
-### Default Resolutions
-
-[sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256
-
-[sample-content.gif](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/gif-files) 🠊 500x500
-
-[sample-content.svg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/svg-files) 🠊 500x500
-
-[sample-content.jpg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/jpg-files) 🠊 1280x720 **(720p)**
-
-[sample-content.mp4](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/mp4-files) 🠊 1920x1080 **(1080p, 25fps)**
-
-[sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 **(2160p)**
-
-[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
 
 ---
 
