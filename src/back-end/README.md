@@ -19,13 +19,3 @@ I acknowledge that not everyone has the luxury of dedicating time to such endeav
 [README.md](https://www.markdownguide.org/cheat-sheet/)
 
 [README.md Template](https://github.com/othneildrew/Best-README-Template)
-
----
-
-[Design Syntax](https://www.compart.com/en/unicode/block/U+25A0)
-[🠉](https://www.compart.com/en/unicode/U+1F809)
-[🠊](https://www.compart.com/en/unicode/U+1F80A)
-[🠋](https://www.compart.com/en/unicode/U+1F80B)
-[🠈](https://www.compart.com/en/unicode/U+1F808)
-
----

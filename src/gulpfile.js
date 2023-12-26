@@ -1,6 +1,3 @@
-/*
-I replaced / with | to save the code without errors
-
 const gulp = require('gulp');
 const clean = require('gulp-clean');
 const { src, dest } = require('gulp');
@@ -15,6 +12,11 @@ const replace = require('gulp-string-replace');
 const deletefile = require('gulp-delete-file');
 const sass = require('gulp-sass')(require('sass'));
 const removeHtmlComments = require('gulp-remove-html-comments');
+
+/*
+I replaced / with | to save the code without errors
+
+
 
 const copyHTML = (pageName) => {
   //--|▼| Copy main HTML file into root folder |▼|--//

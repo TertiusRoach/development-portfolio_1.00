@@ -11,6 +11,9 @@ This readme serves as a guide to delineate my personalized front-end development
             <a href="#folder-structure">Folder Structure</a>
         </li>
         <li>
+            <a href="#my-checklist">My Checklist</a>
+        </li>
+        <li>
             <a href="#default-resolutions">Default Resolutions</a>
         </li>
         <li>
@@ -24,6 +27,12 @@ This readme serves as a guide to delineate my personalized front-end development
 ## Folder Structure
 
 This pertains specifically to the [front-end](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end) structure. Insightful recommendations on optimal resolutions for different file formats are also provided within the [~content](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content) folder, offering a rationale for specific image resolutions to maintain consistency. Crafted with meticulous attention to detail, this document emphasizes clear navigation and provides comprehensive references for each file format, contributing to an elevated efficiency and quality in the front-end development process.
+
+## My Checklist
+
+- [ ] Compile SASS with Gulp
+- [ ] Compile TypeScript with Gulp
+- [ ] Try Webpack instead of RequireJS
 
 ## Default Resolutions
 
@@ -40,6 +49,16 @@ This pertains specifically to the [front-end](https://github.com/TertiusRoach/de
 [sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 **(2160p)**
 
 [Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
+
+---
+
+[Design Syntax](https://www.compart.com/en/unicode/block/U+25A0)
+[🠉](https://www.compart.com/en/unicode/U+1F809)
+[🠊](https://www.compart.com/en/unicode/U+1F80A)
+[🠋](https://www.compart.com/en/unicode/U+1F80B)
+[🠈](https://www.compart.com/en/unicode/U+1F808)
+
+---
 
 ## Subject Here
 
