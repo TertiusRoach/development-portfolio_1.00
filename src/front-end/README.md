@@ -47,33 +47,33 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
-🠋 Ideal for small graphical representations, typically used as website or application icons.
+> 🠋 Ideal for small graphical representations, typically used as website or application icons.
 
-> [sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256
+**[sample-content.ico](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/ico-files) 🠊 256x256**
 
-🠋 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
+> 🠋 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
 
-> [sample-content.gif](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/gif-files) 🠊 500x500
+**[sample-content.gif](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/gif-files) 🠊 500x500**
 
-🠋 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
+> 🠋 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
 
-> [sample-content.svg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/svg-files) 🠊 500x500
+**[sample-content.svg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/svg-files) 🠊 500x500**
 
-🠋 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
+> 🠋 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
 
-> [sample-content.jpg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/jpg-files) 🠊 1280x720 **(720p)**
+**[sample-content.jpg](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/jpg-files) 🠊 1280x720 (720p)**
 
-🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
+> 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
 
-> [sample-content.mp4](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/mp4-files) 🠊 1920x1080 **(1080p, 25fps)**
+**[sample-content.mp4](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/mp4-files) 🠊 1920x1080 (1080p, 25fps)**
 
-🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
+> 🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
-> [sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 **(2160p)**
+**[sample-content.png](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/png-files) 🠊 3840x2160 (2160p)**
 
-🠋 Consider [GIMP](https://www.gimp.org/) as a powerful alternative to Photoshop.
+> 🠋 Consider [GIMP](https://www.gimp.org/) as a powerful alternative to Photoshop.
 
-> [Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)
+**[Photoshop Files](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content/psd-files)**
 
 ### Global Styling
 
