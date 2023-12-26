@@ -82,7 +82,7 @@ Description Here
 
 ---
 
-### My Checklist
+## My Checklist
 
 - [x] Get Gulp to work
 - [x] Copy HTML with Gulp
