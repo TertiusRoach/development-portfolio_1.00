@@ -13,10 +13,109 @@ const deletefile = require('gulp-delete-file');
 const sass = require('gulp-sass')(require('sass'));
 const removeHtmlComments = require('gulp-remove-html-comments');
 
+gulp.task('copyIndex', async () => {
+  let pageName = 'index';
+
+  copyHTML(pageName);
+  compileSASS(pageName);
+  // compileCode(pageName);
+  // duplicateServer(pageName);
+});
+
+const copyHTML = (pageName) => {
+  //--🠋 Copy main HTML file into root folder 🠋--//
+  gulp
+    //--| Find *.html reference files in the 'src' folder |--//
+    .src(`src/front-end/pages/${pageName}/${pageName}.html`)
+    //--| Clear comments from HTML file |--//
+    .pipe(removeHtmlComments())
+    //--| Compress HTML file |--//
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    //--| Copy the pageName.html into 'root' folder |--//
+    .pipe(gulp.dest('src/../'));
+
+  //--🠋 Copy all HTML files into distributable folder 🠋--//
+  let sourceFolders = ['A-body', 'B-overlay', 'C-header', 'D-footer', 'E-leftbar', 'F-rightbar', 'G-main', 'H-data'];
+  let copyHTML = (item, index, array) => {
+    gulp
+      //--| Find *.html files in the source folder |--//
+      .src(`src/front-end/pages/${pageName}/${array[index]}/**/*.html`)
+      .pipe(removeHtmlComments())
+      .pipe(htmlmin({ collapseWhitespace: true }))
+      //--| Copy the *.html files into distribution folder |--//
+      .pipe(gulp.dest(`dist/front-end/pages/${pageName}/${array[index]}/`));
+  };
+  sourceFolders.forEach(copyHTML);
+};
+
+const compileSASS = (pageName) => {
+  // let concatenate = (pageName) => {
+  //   //--🠋 Concatenate all *.scss files 🠋--//
+  //   gulp
+  //     //--| Find all the *.scss files |--//
+  //     .src([
+  //       // 'src/front-end/pages/corporate-identity.scss',
+  //       `src/front-end/pages/${pageName}/A-body/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/B-overlay/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/C-header/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/D-footer/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/E-leftbar/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/F-rightbar/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/G-main/**/*.scss`,
+  //       `src/front-end/pages/${pageName}/H-data/**/*.scss`,
+  //       // 'src/front-end/global-styling.scss',
+  //     ])
+  //     //--| Combine the selected *.scss files |--//
+  //     .pipe(concat('style.scss'))
+  //     //--| Save the *.scss file inside source folder |--//
+  //     .pipe(dest(`src/front-end/pages/${pageName}/`));
+  // };
+  // concatenate(pageName);
+
+  //--🠋 Compile style.scss 🠋--//
+  let compile = (pageName) => {
+    gulp
+      //--| Select style.scss |--//
+      .src([`src/front-end/pages/${pageName}/style.scss`])
+      //--| Convert to file to CSS |--//
+      .pipe(sass().on('error', sass.logError))
+      //--| Compress style.css document |--//
+      .pipe(
+        uglifycss({
+          maxLineLen: 1000,
+          uglyComments: true,
+        })
+      )
+      //--| Distribute CSS file for HTML |--//
+      .pipe(dest(`dist/front-end/pages/${pageName}/`));
+  };
+  compile(pageName);
+  // setTimeout(compile, 5000, pageName);
+
+  /*
+  //--🠋 Delete style.scss 🠋--//
+  let remove = (pageName) => {
+    gulp
+      .src([`src/front-end/${pageName}/style.scss`])
+      //--| Delete style.scss file using Regex |--//
+      .pipe(
+        deletefile({
+          reg: /\w*(\-\w{8}\.js){1}$|\w*(\-\w{8}\.css){1}$/, //--🠈 Regex: Why are you so confusing? 🠈--//
+          deleteMatch: false,
+        })
+      );
+  };
+*/
+  //--🠋 Execute functions asynchronously 🠋--//
+
+  // setTimeout(concatenate, 1000, pageName);
+  // setTimeout(compile, 5000, pageName);
+  // setTimeout(remove, 10000, pageName);
+};
+
 /*
+-------------------------------------------------------------------------------------------
 I replaced / with | to save the code without errors
-
-
 
 const copyHTML = (pageName) => {
   //--|▼| Copy main HTML file into root folder |▼|--//
