@@ -65,8 +65,8 @@ Well-suited for photographs and images with complex details, balancing quality a
 ### PNG Files: Default Resolution = **3840x2160 (2160p)**
 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
-### MP4 Files: Default Specifications = **1920x1080 (1080p, 25fps)**
-Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
+### MP4 Files: Default Specifications = **1920x1080 (1080p)**
+Excellent for video content, supporting high-quality compression with broad compatibility across platforms. I usually set my videos to 25 frames per second.
 
 ---
 
