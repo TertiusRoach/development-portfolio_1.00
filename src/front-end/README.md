@@ -49,6 +49,7 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 ## [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
+
 Ideal for small graphical representations, typically used as website or application icons: Default Resolution = **256x256**.
 
 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution: Default Resolution = **500x500**.
