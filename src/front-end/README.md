@@ -51,21 +51,27 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
 ICO Files: Default Resolution = **256x256**
+
 Ideal for small graphical representations, typically used as website or application icons.
 
 GIF Files: Default Resolution = **500x500**
+
 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
 
 SVG Files: Default Resolution = **500x500**
+
 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
 
 JPG Files: Default Resolution = **1280x720 (720p)**
+
 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
 
 PNG Files: Default Resolution = **3840x2160 (2160p)**
+
 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
 MP4 Files: Default Specifications = **1920x1080 (1080p, 25fps)**
+
 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
 
 ---
