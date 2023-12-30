@@ -59,29 +59,23 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
-> 🠋 Ideal for small graphical representations, typically used as website or application icons.
+### ICO Files: Default Resolution = **256x256**
+Ideal for small graphical representations, typically used as website or application icons.
 
-**sample-content.ico 🠊 256x256**
+### GIF Files: Default Resolution = **500x500**
+Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
 
-> 🠋 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
+### SVG Files: Default Resolution = **500x500**
+Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
 
-**sample-content.gif 🠊 500x500**
+### JPG Files: Default Resolution = **1280x720 (720p)**
+Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
 
-> 🠋 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
+### PNG Files: Default Resolution = **3840x2160 (2160p)**
+Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
-**sample-content.svg 🠊 500x500**
-
-> 🠋 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
-
-**sample-content.jpg 🠊 1280x720 (720p)**
-
-> 🠋 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
-
-**sample-content.png 🠊 3840x2160 (2160p)**
-
-> 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
-
-**sample-content.mp4 🠊 1920x1080 (1080p, 25fps)**
+### MP4 Files: Default Specifications = **1920x1080 (1080p)**
+Excellent for video content, supporting high-quality compression with broad compatibility across platforms. I usually set my videos to 25 frames per second.
 
 ---
 
@@ -115,6 +109,7 @@ Description Here
 - [x] Combine Bootstrap with Stylesheet using Gulp
 - [ ] Compile TypeScript with Gulp
 - [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
+- [ ] Animate each element and set as default
 
 ---
 
