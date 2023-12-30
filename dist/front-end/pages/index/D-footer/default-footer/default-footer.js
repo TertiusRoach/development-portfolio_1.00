@@ -1,0 +1,1 @@
+"use strict";var IndexDefaultFooter;Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexDefaultFooter=void 0,(IndexDefaultFooter||(exports.IndexDefaultFooter=IndexDefaultFooter={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))};

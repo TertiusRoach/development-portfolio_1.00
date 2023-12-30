@@ -1,0 +1,1 @@
+"use strict";var IndexDefaultOverlay;Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexDefaultOverlay=void 0,(IndexDefaultOverlay||(exports.IndexDefaultOverlay=IndexDefaultOverlay={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))};
