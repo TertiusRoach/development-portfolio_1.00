@@ -23,16 +23,6 @@ gulp.task('copyIndex', async () => {
   compileTypescript(pageName);
 });
 
-/*
-gulp.task('copyExample', async () => {
-  let pageName = 'example';
-
-  copyHTML(pageName);
-  compileSASS(pageName);
-  compileTypescript(pageName);
-});
-*/
-
 const copyHTML = (pageName) => {
   //--🠋 Copy main HTML file into root folder 🠋--//
   gulp
@@ -160,118 +150,11 @@ const compileTypescript = (pageName) => {
 };
 
 /*
--------------------------------------------------------------------------------------------
-I replaced / with | to save the code without errors
-
-const compileCode = (pageName) => {
-  //--|▼| Copy RequireJS to 'dist' folder |▼|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/main.js')
-    .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-
-  //--|▼| Copy MongoDB to 'dist' folder |▼|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/mongo.js')
-    .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-
-  //--|▼| Build reference map for compiler |▼|--//
-  const reference = () => {
-    //--|▼| Reference 'tsconfig.json' |▼|--//
-    const typeScriptProject = typescript.createProject('tsconfig.json');
-    //--|▼| Get TypeScript source code |▼|--//
-    const sourceCode = typeScriptProject.src();
-    //--|▼| Initialize TypeScript map for export |▼|--//
-    const initializeSourcemaps = sourcemaps.init();
-    //--|▼| Give source files its JavaScript identity |▼|--//
-    const IdentityMap = sourcemaps.identityMap();
-    //--|▼| Return code for compiling |▼|--//
-    return sourceCode.pipe(initializeSourcemaps).pipe(IdentityMap).pipe(typeScriptProject());
-  };
-
-  //--|▼| Map out TypeScript to dist folder |▼|--//
-  let srcUrlMapper = (file) => {
-    let distFolder = gulp.dest('dist/');
-    return distFolder + file.relative.toString().split('\\').join('/') + '.map';
-  };
-
-  //--|▼| Compile TypeScript |▼|--//
-  let compileTypes = () => {
-    let typesFolder = gulp.dest('types/');
-    let typeScriptCompiled = reference();
-
-    typeScriptCompiled.dts.pipe(typesFolder).on('error', function (err) {
-      console.log('Gulp says: ' + err.message);
-    });
-
-    typeScriptCompiled.js
-      .pipe(
-        sourcemaps
-          .write('./', {
-            includeContent: false,
-            addComment: true,
-            sourceMappingURL: srcUrlMapper,
-            sourceRoot: '../src',
-          })
-          .pipe(uglify())
-      )
-      .pipe(dest('dist/'));
-  };
-
-  compileTypes();
-};
-
-const duplicateServer = (pageName) => {
-  //--|▼| Hide Secrets |▼|--//
-  gulp
-    //--| Find the all files |--//
-    .src(['src/back-end/server/*.js'])
-    //--| Remove URI String |--//
-    .pipe(
-      //--| https://www.youtube.com/watch?v=rhzKDrUiJVk |--//
-      replace(new RegExp(`uri = *'[^]*';`, 'g'), () => {
-        return `uri = 'https://www.mongodb.com/';`;
-      })
-    )
-    //--| Copy to Destination |--//
-    .pipe(gulp.dest('dist/back-end/server/'));
-};
-
-//-------------------------------------------------//
-gulp.task('copyIndex', async () => {
-  let pageName = 'index';
+gulp.task('copyExample', async () => {
+  let pageName = 'example';
 
   copyHTML(pageName);
-  compileSCSS(pageName);
-  compileCode(pageName);
-  duplicateServer(pageName);
+  compileSASS(pageName);
+  compileTypescript(pageName);
 });
-gulp.task('copyGrid', async () => {
-  let pageName = 'grid';
-
-  copyHTML(pageName);
-  compileSCSS(pageName);
-  compileCode(pageName);
-});
-gulp.task('backupDependencies', async () => {
-  //--|▼| Copy content to 'dist' folder |▼|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/content/**|*')
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/content/'));
-
-  //--|▼| Copy vendors to 'dist' folder |▼|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/vendors/**|*')
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/vendors/'));
-});
-//-------------------------------------------------//
 */
