@@ -16,9 +16,12 @@ const removeHtmlComments = require('gulp-remove-html-comments');
 
 gulp.task('copyIndex', async () => {
   let pageName = 'index';
+
+  /*
   copyHTML(pageName);
   compileSASS(pageName);
-  // compileCode(pageName);
+  */
+  compileTypeScript(pageName);
   // duplicateServer(pageName);
 });
 
@@ -130,6 +133,69 @@ const compileSASS = (pageName) => {
   setTimeout(compile, 2500, pageName);
   setTimeout(remove, 5000);
   setTimeout(prepend, 7500, pageName);
+};
+
+const compileTypeScript = (pageName) => {
+  //--|🠋| Copy RequireJS to 'dist' folder |🠋|--//
+  gulp
+    //--| Find the *.js file |--//
+    .src('src/main.js')
+    .pipe(uglify())
+    //--| Set Destination |--//
+    .pipe(gulp.dest('dist/'));
+
+  //--|▼| Copy MongoDB to 'dist' folder |▼|--//
+  gulp
+    //--| Find the *.js file |--//
+    .src('src/mongo.js')
+    .pipe(uglify())
+    //--| Set Destination |--//
+    .pipe(gulp.dest('dist/'));
+
+  //--|🠋| Build reference map for compiler |🠋|--//
+  const reference = () => {
+    //--|🠋| Reference 'tsconfig.json' |🠋|--//
+    const typeScriptProject = typescript.createProject('tsconfig.json');
+    //--|🠋| Get TypeScript source code |🠋|--//
+    const sourceCode = typeScriptProject.src();
+    //--|🠋| Initialize TypeScript map for export |🠋|--//
+    const initializeSourcemaps = sourcemaps.init();
+    //--|🠋| Give source files its JavaScript identity |🠋|--//
+    const IdentityMap = sourcemaps.identityMap();
+    //--|🠋| Return code for compiling |🠋|--//
+    return sourceCode.pipe(initializeSourcemaps).pipe(IdentityMap).pipe(typeScriptProject());
+  };
+
+  //--|🠋| Map out TypeScript to dist folder |🠋|--//
+  let srcUrlMapper = (file) => {
+    let distFolder = gulp.dest('dist/');
+    return distFolder + file.relative.toString().split('\\').join('/') + '.map';
+  };
+
+  //--|🠋| Compile TypeScript |🠋|--//
+  let compileTypes = () => {
+    let typesFolder = gulp.dest('types/');
+    let typeScriptCompiled = reference();
+
+    typeScriptCompiled.dts.pipe(typesFolder).on('error', function (err) {
+      console.log('Gulp says: ' + err.message);
+    });
+
+    typeScriptCompiled.js
+      .pipe(
+        sourcemaps
+          .write('./', {
+            includeContent: false,
+            addComment: true,
+            sourceMappingURL: srcUrlMapper,
+            sourceRoot: '../src',
+          })
+          .pipe(uglify())
+      )
+      .pipe(dest('dist/'));
+  };
+
+  compileTypes();
 };
 
 /*
