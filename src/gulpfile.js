@@ -150,13 +150,13 @@ const compileTypeScript = (pageName) => {
     return sourceCode.pipe(initializeSourcemaps).pipe(IdentityMap).pipe(typeScriptProject());
   };
 
-  /*
   //--|🠋| Map out TypeScript to dist folder |🠋|--//
   let srcUrlMapper = (file) => {
     let distFolder = gulp.dest('dist/');
     return distFolder + file.relative.toString().split('\\').join('/') + '.map';
   };
 
+  /*
   //--|🠋| Compile TypeScript |🠋|--//
   let compileTypes = () => {
     let typesFolder = gulp.dest('types/');
@@ -181,6 +181,8 @@ const compileTypeScript = (pageName) => {
   };
 
   compileTypes();
+
+
   */
   /*
   //--|🠋| Copy RequireJS to 'dist' folder |🠋|--//
