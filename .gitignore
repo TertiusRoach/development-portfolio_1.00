@@ -2,5 +2,5 @@
 ~bin
 desktop.ini
 node_modules
-package.json
+# package.json
 package-lock.json

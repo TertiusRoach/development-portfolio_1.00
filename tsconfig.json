@@ -1,18 +1,16 @@
-// {
-//   "compileOnSave": true,
-//   "exclude": ["dist/"],
-//   // "include": ["src/back-end/**/**/**/*.ts", "src/front-end/**/**/**/*.ts"],
-//   "include": ["src/front-end/pages/index/A-body/default-body/*.ts"],
-//   "compilerOptions": {
-//     "baseUrl": "src",
-//     "rootDir": "src",
-//     "target": "es5",
-//     "module": "amd",
-//     "sourceMap": true,
-//     "removeComments": true,
-//     "noEmitOnError": true,
-//     "declaration": true,
-//     "lib": ["es5", "dom", "scripthost", "es2015"],
-//     "strictNullChecks": false
-//   }
-// }
+{
+  "compileOnSave": true,
+  "exclude": ["dist/"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "src",
+    "target": "es5",
+    "module": "amd",
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "lib": ["es5", "dom", "scripthost", "es2015"],
+    "strictNullChecks": false
+  }
+}

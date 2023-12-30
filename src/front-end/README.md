@@ -4,7 +4,7 @@
 - [x] Copy HTML with Gulp
 - [x] Compile SASS to CSS with Gulp
 - [x] Combine Bootstrap with Stylesheet using Gulp
-- [ ] Compile TypeScript with Gulp
+- [x] Compile TypeScript with Gulp
 - [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
 - [ ] Animate each element and set as default
 - [ ] Document README.md files

@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+
 const clean = require('gulp-clean');
 const { src, dest } = require('gulp');
 const uglify = require('gulp-uglify');
@@ -7,8 +8,8 @@ const concat = require('gulp-concat');
 const htmlmin = require('gulp-htmlmin');
 const gap = require('gulp-append-prepend');
 const uglifycss = require('gulp-uglifycss');
-const sourcemaps = require('gulp-sourcemaps');
 const typescript = require('gulp-typescript');
+const sourcemaps = require('gulp-sourcemaps');
 const replace = require('gulp-string-replace');
 const deletefile = require('gulp-delete-file');
 const sass = require('gulp-sass')(require('sass'));
@@ -17,13 +18,20 @@ const removeHtmlComments = require('gulp-remove-html-comments');
 gulp.task('copyIndex', async () => {
   let pageName = 'index';
 
-  /*
   copyHTML(pageName);
   compileSASS(pageName);
-  */
-  compileTypeScript(pageName);
-  // duplicateServer(pageName);
+  compileTypescript(pageName);
 });
+
+/*
+gulp.task('copyExample', async () => {
+  let pageName = 'example';
+
+  copyHTML(pageName);
+  compileSASS(pageName);
+  compileTypescript(pageName);
+});
+*/
 
 const copyHTML = (pageName) => {
   //--🠋 Copy main HTML file into root folder 🠋--//
@@ -135,72 +143,20 @@ const compileSASS = (pageName) => {
   setTimeout(prepend, 7500, pageName);
 };
 
-const compileTypeScript = (pageName) => {
-  //--|🠋| Build reference map for compiler |🠋|--//
-  const reference = () => {
-    //--|🠋| Reference 'tsconfig.json' |🠋|--//
-    const typeScriptProject = typescript.createProject('tsconfig.json');
-    //--|🠋| Get TypeScript source code |🠋|--//
-    const sourceCode = typeScriptProject.src();
-    //--|🠋| Initialize TypeScript map for export |🠋|--//
-    const initializeSourcemaps = sourcemaps.init();
-    //--|🠋| Give source files its JavaScript identity |🠋|--//
-    const IdentityMap = sourcemaps.identityMap();
-    //--|🠋| Return code for compiling |🠋|--//
-    return sourceCode.pipe(initializeSourcemaps).pipe(IdentityMap).pipe(typeScriptProject());
-  };
+const compileTypescript = (pageName) => {
+  let fileLocations = `front-end/pages/${pageName}/**/*.ts`;
+  let project = typescript.createProject('../tsconfig.json');
 
-  //--|🠋| Map out TypeScript to dist folder |🠋|--//
-  let srcUrlMapper = (file) => {
-    let distFolder = gulp.dest('dist/');
-    return distFolder + file.relative.toString().split('\\').join('/') + '.map';
-  };
-
-  /*
-  //--|🠋| Compile TypeScript |🠋|--//
-  let compileTypes = () => {
-    let typesFolder = gulp.dest('types/');
-    let typeScriptCompiled = reference();
-
-    typeScriptCompiled.dts.pipe(typesFolder).on('error', function (err) {
-      console.log('Gulp says: ' + err.message);
-    });
-
-    typeScriptCompiled.js
-      .pipe(
-        sourcemaps
-          .write('./', {
-            includeContent: false,
-            addComment: true,
-            sourceMappingURL: srcUrlMapper,
-            sourceRoot: '../src',
-          })
-          .pipe(uglify())
-      )
-      .pipe(dest('dist/'));
-  };
-
-  compileTypes();
-
-
-  */
-  /*
-  //--|🠋| Copy RequireJS to 'dist' folder |🠋|--//
+  //--🠋 Compile all Page TypeScript files to JavaScript 🠋--//
   gulp
-    //--| Find the *.js file |--//
-    .src('src/main.js')
+    //--| Description Here |--//
+    .src(`src/${fileLocations}`)
+    //--| Description Here |--//
+    .pipe(project())
+    //--| Compress JavaScript |--//
     .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-
-  //--|🠋| Copy MongoDB to 'dist' folder |🠋|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/mongo.js')
-    .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-*/
+    //--| Copy 'src' to 'dist'  |--//
+    .pipe(gulp.dest([`dist/front-end/pages/${pageName}//`]));
 };
 
 /*
