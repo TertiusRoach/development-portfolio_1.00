@@ -16,10 +16,21 @@ This directory functions as the [User Interface](https://en.wikipedia.org/wiki/U
                 <li>
                     <a href="#corporate-identity">Corporate Identity</a>
                 </li>
+                <li>
+                    <a href="#content-directory">Content Directory</a>
+                </li>
             </ul>
         </li>
         <li>
-            <a href="#content-directory">Content Directory</a>
+            <a href="#utilities-folder">Utilities Folder</a>
+            <ul>
+               <li>
+                    <a href="#tools-folder">Tools Folder</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#vendors-folder">Vendors Folder</a>
         </li>
         <li>
             <a href="#subject-here">Subject Here</a>
@@ -44,9 +55,7 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 
 This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob/main/src/front-end/pages/corporate-identity.scss) encapsulates the default values for a company's registered colors and logos. It also defines global defaults for CSS margins and padding of HTML elements. Typically, I initialize these defaults to zero and then customize them based on the specific design requirements.
 
----
-
-## [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
+### [Content Directory](https://github.com/TertiusRoach/development-portfolio_1.00/tree/main/src/front-end/pages/index/~content)
 
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
@@ -73,6 +82,22 @@ Each file format has a distinct purpose, and through experience, I've discovered
 > 🠋 Excellent for video content, supporting high-quality compression with broad compatibility across platforms.
 
 **sample-content.mp4 🠊 1920x1080 (1080p, 25fps)**
+
+---
+
+## Utilities Folder
+
+Description Here
+
+### Tools Folder
+
+Description Here
+
+---
+
+## Vendors Folder
+
+Description Here
 
 ---
 
