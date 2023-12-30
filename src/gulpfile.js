@@ -136,22 +136,6 @@ const compileSASS = (pageName) => {
 };
 
 const compileTypeScript = (pageName) => {
-  //--|🠋| Copy RequireJS to 'dist' folder |🠋|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/main.js')
-    .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-
-  //--|▼| Copy MongoDB to 'dist' folder |▼|--//
-  gulp
-    //--| Find the *.js file |--//
-    .src('src/mongo.js')
-    .pipe(uglify())
-    //--| Set Destination |--//
-    .pipe(gulp.dest('dist/'));
-
   //--|🠋| Build reference map for compiler |🠋|--//
   const reference = () => {
     //--|🠋| Reference 'tsconfig.json' |🠋|--//
@@ -166,6 +150,7 @@ const compileTypeScript = (pageName) => {
     return sourceCode.pipe(initializeSourcemaps).pipe(IdentityMap).pipe(typeScriptProject());
   };
 
+  /*
   //--|🠋| Map out TypeScript to dist folder |🠋|--//
   let srcUrlMapper = (file) => {
     let distFolder = gulp.dest('dist/');
@@ -196,6 +181,24 @@ const compileTypeScript = (pageName) => {
   };
 
   compileTypes();
+  */
+  /*
+  //--|🠋| Copy RequireJS to 'dist' folder |🠋|--//
+  gulp
+    //--| Find the *.js file |--//
+    .src('src/main.js')
+    .pipe(uglify())
+    //--| Set Destination |--//
+    .pipe(gulp.dest('dist/'));
+
+  //--|🠋| Copy MongoDB to 'dist' folder |🠋|--//
+  gulp
+    //--| Find the *.js file |--//
+    .src('src/mongo.js')
+    .pipe(uglify())
+    //--| Set Destination |--//
+    .pipe(gulp.dest('dist/'));
+*/
 };
 
 /*
