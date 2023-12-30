@@ -1,3 +1,16 @@
+## My Checklist
+
+- [x] Get Gulp to work
+- [x] Copy HTML with Gulp
+- [x] Compile SASS to CSS with Gulp
+- [x] Combine Bootstrap with Stylesheet using Gulp
+- [ ] Compile TypeScript with Gulp
+- [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
+- [ ] Animate each element and set as default
+- [ ] Document README.md files
+
+---
+
 # [Front-end Documentation](https://github.com/TertiusRoach/development-portfolio_1.00)
 
 This directory functions as the [User Interface](https://en.wikipedia.org/wiki/User_interface) component of the application. The purpose of this documentation is to offer a detailed insight into the organization of files and folders, with the goal of promoting clarity to support smooth scalability in projects. The structure is meticulously crafted to reduce the chances of introducing errors in the code. Files are arranged strategically to minimize unnecessary code and ensure a clear understanding of each document's role. The categorization of files is designed to be intuitive, making it easier for both novice and experienced developers to comprehend, particularly as the project's complexity grows.
@@ -60,21 +73,27 @@ This [SASS file](https://github.com/TertiusRoach/development-portfolio_1.00/blob
 Each file format has a distinct purpose, and through experience, I've discovered that the choice of format significantly influences the outcome based on specific requirements.
 
 ### ICO Files: Default Resolution = **256x256**
+
 Ideal for small graphical representations, typically used as website or application icons.
 
 ### GIF Files: Default Resolution = **500x500**
+
 Suited for simple animations, logos, and images with limited colors, providing a lightweight solution.
 
 ### SVG Files: Default Resolution = **500x500**
+
 Perfect for scalable graphics, such as logos and icons, as it maintains clarity at various sizes without loss of quality.
 
 ### JPG Files: Default Resolution = **1280x720 (720p)**
+
 Well-suited for photographs and images with complex details, balancing quality and compression for efficient storage.
 
 ### PNG Files: Default Resolution = **3840x2160 (2160p)**
+
 Well-suited for images requiring transparency and sharp details, commonly used for web graphics and logos.
 
 ### MP4 Files: Default Specifications = **1920x1080 (1080p)**
+
 Excellent for video content, supporting high-quality compression with broad compatibility across platforms. I usually set my videos to 25 frames per second.
 
 ---
@@ -98,18 +117,6 @@ Description Here
 ## Subject Here
 
 Description Here
-
----
-
-## My Checklist
-
-- [x] Get Gulp to work
-- [x] Copy HTML with Gulp
-- [x] Compile SASS to CSS with Gulp
-- [x] Combine Bootstrap with Stylesheet using Gulp
-- [ ] Compile TypeScript with Gulp
-- [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
-- [ ] Animate each element and set as default
 
 ---
 
