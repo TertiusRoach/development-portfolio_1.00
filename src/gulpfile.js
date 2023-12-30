@@ -18,9 +18,10 @@ const removeHtmlComments = require('gulp-remove-html-comments');
 gulp.task('copyIndex', async () => {
   let pageName = 'index';
 
-  copyHTML(pageName);
-  compileSASS(pageName);
-  compileTypescript(pageName);
+  // copyHTML(pageName);
+  // compileSASS(pageName);
+  compilePages(pageName);
+  compileUtilities(pageName);
 });
 
 const copyHTML = (pageName) => {
@@ -133,20 +134,36 @@ const compileSASS = (pageName) => {
   setTimeout(prepend, 7500, pageName);
 };
 
-const compileTypescript = (pageName) => {
-  let fileLocations = `front-end/pages/${pageName}/**/*.ts`;
+const compilePages = (pageName) => {
+  let pageFiles = `front-end/pages/${pageName}/**/*.ts`;
   let project = typescript.createProject('../tsconfig.json');
 
-  //--🠋 Compile all Page TypeScript files to JavaScript 🠋--//
+  //--🠋 Compile Pages to JavaScript 🠋--//
   gulp
     //--| Description Here |--//
-    .src(`src/${fileLocations}`)
+    .src(`src/${pageFiles}`)
     //--| Description Here |--//
     .pipe(project())
     //--| Compress JavaScript |--//
     .pipe(uglify())
     //--| Copy 'src' to 'dist'  |--//
     .pipe(gulp.dest([`dist/front-end/pages/${pageName}//`]));
+};
+
+const compileUtilities = (pageName) => {
+  let utilityFiles = `front-end/utilities`;
+  let project = typescript.createProject('../tsconfig.json');
+
+  //--🠋 Compile Utilities to JavaScript 🠋--//
+  gulp
+    //--| Get Source Locations |--//
+    .src(`src/front-end/utilities/*.ts`)
+    //--| Pipe TypeScript specifications |--//
+    .pipe(project())
+    //--| Compress JavaScript |--//
+    .pipe(uglify())
+    //--| Copy 'src' to 'dist'  |--//
+    .pipe(gulp.dest([`dist/front-end/utilities/`]));
 };
 
 /*
