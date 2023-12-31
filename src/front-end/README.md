@@ -5,7 +5,8 @@
 - [x] Compile SASS to CSS with Gulp
 - [x] Combine Bootstrap with Stylesheet using Gulp
 - [x] Compile TypeScript with Gulp
-- [ ] Try [Webpack](https://webpack.js.org/) instead of RequireJS
+- [ ] Implement [Webpack](https://www.youtube.com/watch?v=sOUhEJeJ-kI&ab_channel=NetNinja) with TypeScript
+- [ ] Implement RequireJS or switch to [Webpack](https://webpack.js.org/)
 - [ ] Animate each element and set as default
 - [ ] Document README.md files
 

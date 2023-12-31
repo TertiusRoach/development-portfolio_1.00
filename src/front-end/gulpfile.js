@@ -22,13 +22,7 @@ gulp.task('copyIndex', async () => {
   compileSASS(pageName);
   compileCode(pageName);
 
-  /*
-  //--🠋 Export Front-end Files 🠋--//
-  compilePages(pageName);
-  compileUtilities(pageName);
-
-  //--🠋 Compile JavaScript  (Back-end) 🠋--//
-  */
+  duplicateDependencies();
 });
 
 const copyHTML = (pageName) => {
@@ -143,13 +137,16 @@ const compileSASS = (pageName) => {
 
 const compileCode = (pageName) => {
   //--🠋 Export Front-end 🠋--//
-  assemblePages(pageName);
   assembleUtilities();
+  assemblePages(pageName);
+  assembleVendors('front-end');
 
   //--🠋 Export Back-end 🠋--//
-
-  //--🠋 Export Dependencies 🠋--//
-  assembleDependencies();
+  /*
+  assembleUtilities();
+  assembleServer(pageName);
+  assembleVendors('back-end');
+  */
 };
 
 const assemblePages = (pageName) => {
@@ -182,8 +179,49 @@ const assembleUtilities = () => {
     .pipe(gulp.dest([`dist/front-end/utilities/`]));
 };
 
-const assembleDependencies = () => {
-  //--🠋 Copy main full-stack.js files 🠋--//
+const assembleVendors = (stack) => {
+  //--🠋 Combine all vendor files 🠋--//
+  let copy = (vendor) => {
+    switch (vendor) {
+      //--🠋 Back-end 🠋--//
+      case '':
+        break;
+      //--🠋 Front-end 🠋--//
+      case 'RequireJS':
+        //--🠋 Copy RequireJS 🠋--//
+        gulp
+          //--| Find RequireJS |--//
+          .src('src/front-end/vendors/requirejs/require-2.3.6.js')
+          //--| Rename File |--//
+          .pipe(rename({ basename: 'RequireJS' }))
+          //--| Copy RequireJS to 'dist' folder |--//
+          .pipe(gulp.dest('dist/front-end/vendors/'));
+        break;
+      case 'Font Awesome':
+        //--🠋 Copy fontAwesome 🠋--//
+        gulp
+          //--| Find fontAwesome |--//
+          .src('src/front-end/vendors/font-awesome/5.13.0/js/all.min.js')
+          //--| Rename File |--//
+          .pipe(rename({ basename: 'Font Awesome' }))
+          //--| Copy fontAwesome to 'dist' folder |--//
+          .pipe(gulp.dest('dist/front-end/vendors/'));
+        break;
+    }
+  };
+
+  switch (stack) {
+    case 'back-end':
+      break;
+    case 'front-end':
+      copy('RequireJS');
+      copy('Font Awesome');
+      break;
+  }
+};
+
+const duplicateDependencies = () => {
+  //--🠋 Copy full-stack.js 🠋--//
   let fullStack = ['back-end', 'front-end'];
   for (let i = 0; i < fullStack.length; i++) {
     gulp
@@ -193,35 +231,5 @@ const assembleDependencies = () => {
       .pipe(uglify())
       //--| Output to 'dist' directory |--//
       .pipe(gulp.dest(`dist/${fullStack[i]}/`));
-
-    switch (fullStack[i]) {
-      case 'back-end':
-        break;
-      case 'front-end':
-        //--🠋 Copy RequireJS 🠋--//
-        gulp
-          //--| Find RequireJS |--//
-          .src(`src/${fullStack[i]}/vendors/requirejs/require-2.3.6.js`)
-          //--| Copy RequireJS to 'dist' folder |--//
-          .pipe(gulp.dest(`dist/${fullStack[i]}/vendors/requirejs/`));
-        break;
-    }
   }
-
-  // //--🠋 Copy RequireJS 🠋--//
-  // gulp
-  //   //--| Find RequireJS |--//
-  //   .src('src/front-end/vendors/requirejs/require-2.3.6.js')
-  //   //--| Copy RequireJS to 'dist' folder |--//
-  //   .pipe(gulp.dest('dist/front-end/vendors/requirejs/'));
 };
-
-/*
-gulp.task('copyExample', async () => {
-  let pageName = 'example';
-
-  copyHTML(pageName);
-  compileSASS(pageName);
-  compileTypescript(pageName);
-});
-*/
