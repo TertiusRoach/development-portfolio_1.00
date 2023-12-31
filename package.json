@@ -28,6 +28,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-delete-file": "^1.0.2",
+    "gulp-dest": "^0.2.3",
     "gulp-htmlmin": "^5.0.1",
     "gulp-prepend": "^0.3.0",
     "gulp-remove-html-comments": "^1.0.1",

@@ -20,12 +20,15 @@ gulp.task('copyIndex', async () => {
 
   copyHTML(pageName);
   compileSASS(pageName);
+  compileCode(pageName);
 
-  //--🠋 Compile TypeScript (Front-end) 🠋--//
+  /*
+  //--🠋 Export Front-end Files 🠋--//
   compilePages(pageName);
   compileUtilities(pageName);
 
   //--🠋 Compile JavaScript  (Back-end) 🠋--//
+  */
 });
 
 const copyHTML = (pageName) => {
@@ -133,41 +136,84 @@ const compileSASS = (pageName) => {
 
   //--🠋 Execute functions asynchronously 🠋--//
   concatenate(pageName);
-  setTimeout(compile, 2500, pageName);
   setTimeout(remove, 5000);
+  setTimeout(compile, 2500, pageName);
   setTimeout(prepend, 7500, pageName);
 };
 
-const compilePages = (pageName) => {
-  let pageFiles = `front-end/pages/${pageName}/**/*.ts`;
-  let project = typescript.createProject('../tsconfig.json');
+const compileCode = (pageName) => {
+  //--🠋 Export Front-end 🠋--//
+  assemblePages(pageName);
+  assembleUtilities();
+
+  //--🠋 Export Back-end 🠋--//
+
+  //--🠋 Export Dependencies 🠋--//
+  assembleDependencies();
+};
+
+const assemblePages = (pageName) => {
+  let config = typescript.createProject('../tsconfig.json');
 
   //--🠋 Compile Pages to JavaScript 🠋--//
   gulp
     //--| Description Here |--//
-    .src(`src/${pageFiles}`)
+    .src(`src/front-end/pages/${pageName}/**/*.ts`)
     //--| Description Here |--//
-    .pipe(project())
+    .pipe(config())
     //--| Compress JavaScript |--//
     .pipe(uglify())
     //--| Copy 'src' to 'dist'  |--//
     .pipe(gulp.dest([`dist/front-end/pages/${pageName}//`]));
 };
 
-const compileUtilities = (pageName) => {
-  let utilityFiles = `front-end/utilities`;
-  let project = typescript.createProject('../tsconfig.json');
+const assembleUtilities = () => {
+  let config = typescript.createProject('../tsconfig.json');
 
   //--🠋 Compile Utilities to JavaScript 🠋--//
   gulp
     //--| Get Source Locations |--//
     .src(`src/front-end/utilities/*.ts`)
     //--| Pipe TypeScript specifications |--//
-    .pipe(project())
+    .pipe(config())
     //--| Compress JavaScript |--//
     .pipe(uglify())
     //--| Copy 'src' to 'dist'  |--//
     .pipe(gulp.dest([`dist/front-end/utilities/`]));
+};
+
+const assembleDependencies = () => {
+  //--🠋 Copy main full-stack.js files 🠋--//
+  let fullStack = ['back-end', 'front-end'];
+  for (let i = 0; i < fullStack.length; i++) {
+    gulp
+      //--| Points to file location |--//
+      .src(`src/${fullStack[i]}/${fullStack[i]}.js`)
+      //--| Minify JavaScript |--//
+      .pipe(uglify())
+      //--| Output to 'dist' directory |--//
+      .pipe(gulp.dest(`dist/${fullStack[i]}/`));
+
+    switch (fullStack[i]) {
+      case 'back-end':
+        break;
+      case 'front-end':
+        //--🠋 Copy RequireJS 🠋--//
+        gulp
+          //--| Find RequireJS |--//
+          .src(`src/${fullStack[i]}/vendors/requirejs/require-2.3.6.js`)
+          //--| Copy RequireJS to 'dist' folder |--//
+          .pipe(gulp.dest(`dist/${fullStack[i]}/vendors/requirejs/`));
+        break;
+    }
+  }
+
+  // //--🠋 Copy RequireJS 🠋--//
+  // gulp
+  //   //--| Find RequireJS |--//
+  //   .src('src/front-end/vendors/requirejs/require-2.3.6.js')
+  //   //--| Copy RequireJS to 'dist' folder |--//
+  //   .pipe(gulp.dest('dist/front-end/vendors/requirejs/'));
 };
 
 /*
