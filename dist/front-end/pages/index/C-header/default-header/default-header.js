@@ -1,1 +1,0 @@
-"use strict";var IndexDefaultHeader;Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexDefaultHeader=void 0,(IndexDefaultHeader||(exports.IndexDefaultHeader=IndexDefaultHeader={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))};

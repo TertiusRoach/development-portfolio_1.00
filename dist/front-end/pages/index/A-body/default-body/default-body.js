@@ -1,1 +1,0 @@
-"use strict";var IndexDefaultBody;Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexDefaultBody=void 0,(IndexDefaultBody||(exports.IndexDefaultBody=IndexDefaultBody={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))};

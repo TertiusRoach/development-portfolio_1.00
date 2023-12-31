@@ -1,1 +1,0 @@
-"use strict";var IndexDefaultLeftbar;Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexDefaultLeftbar=void 0,(IndexDefaultLeftbar||(exports.IndexDefaultLeftbar=IndexDefaultLeftbar={})).eventsFor=function(e){console.log("--".concat(e," Loaded"))};
