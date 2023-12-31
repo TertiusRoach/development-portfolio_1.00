@@ -18,11 +18,14 @@ const removeHtmlComments = require('gulp-remove-html-comments');
 gulp.task('copyIndex', async () => {
   let pageName = 'index';
 
+  compileTypescript();
+  /*
   copyHTML(pageName);
   compileSASS(pageName);
   compileCode(pageName);
 
   duplicateDependencies();
+  */
 });
 
 const copyHTML = (pageName) => {

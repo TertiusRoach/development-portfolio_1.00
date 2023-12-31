@@ -1,6 +1,7 @@
 {
   "compileOnSave": true,
   "exclude": ["dist/"],
+  "include": ["src/"],
   "compilerOptions": {
     "baseUrl": "src",
     "rootDir": "src",
