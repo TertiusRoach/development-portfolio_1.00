@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,t){"use strict";var n;Object.defineProperty(t,"__esModule",{value:!0}),t.DefaultMain=void 0,(n||(t.DefaultMain={})).events=function(){console.log("default-main.js Detected!")}});

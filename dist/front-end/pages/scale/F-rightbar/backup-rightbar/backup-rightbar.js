@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,r){"use strict";var t;Object.defineProperty(r,"__esModule",{value:!0}),r.BackupRightbar=void 0,(t||(r.BackupRightbar={})).events=function(){console.log("backup-rightbar.js Loaded!")}});

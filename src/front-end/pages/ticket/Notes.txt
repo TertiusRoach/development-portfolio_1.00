@@ -1,0 +1,81 @@
+-----------------------------------------------
+Jane Lester:
+Gender: Female
+Nationality: English
+Position: Manager, Technical
+Personality Traits:
+Positive Traits: Strategic Thinker, Leadership Skills
+Negative Trait: Can be Overly Directive
+-----------------------------------------------
+Hammad Dean:
+Gender: Male
+Nationality: Pakistani
+Position: Technical
+Personality Traits:
+Positive Traits: Innovative, Problem-Solver
+Negative Trait: Impatient with Process
+-----------------------------------------------
+Saffron Hansen:
+Gender: Female
+Nationality: Danish
+Position: Technical
+Personality Traits:
+Positive Traits: Creative Thinker, Adaptable
+Negative Trait: Can be Overly Critical
+-----------------------------------------------
+Dale Sutton:
+Gender: Male
+Nationality: English
+Position: Technical
+Personality Traits:
+Positive Traits: Detail-Oriented, Team Player
+Negative Trait: Resistant to Change
+-----------------------------------------------
+Eshan Booker:
+Gender: Male
+Nationality: Indian
+Position: Supervisor, Administration
+Personality Traits:
+Positive Traits: Organized, Efficient
+Negative Trait: Rigid in Approach
+-----------------------------------------------
+Theodore Russell:
+Gender: Male
+Nationality: American
+Position: Administration
+Personality Traits:
+Positive Traits: Strategic Planner, Decisive
+Negative Trait: Overlooks Minor Tasks
+-----------------------------------------------
+Kady Deacon:
+Gender: Female
+Nationality: English
+Position: Administration
+Personality Traits:
+Positive Traits: Communicative, Diplomatic
+Negative Trait: Avoids Confrontation
+-----------------------------------------------
+Mei Lin:
+Gender: Female
+Nationality: East Asian
+Position: Specialist, Maintenance
+Personality Traits:
+Positive Traits: Detail-Oriented, Resourceful
+Negative Trait: Can be Perfectionistic
+-----------------------------------------------
+Conrad Guy:
+Gender: Male
+Nationality: German
+Position: Maintenance
+Personality Traits:
+Positive Traits: Practical, Reliable
+Negative Trait: Resistant to Adopting New Techniques
+-----------------------------------------------
+Danish Copeland:
+Gender: Male
+Nationality: American
+Position: Human Resources
+Personality Traits:
+Positive Traits: Empathetic, Approachable
+Negative Trait: Struggles with Tough Decisions
+-----------------------------------------------

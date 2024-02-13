@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,o){"use strict";var t;Object.defineProperty(o,"__esModule",{value:!0}),o.ScalableFooter=void 0,(t||(o.ScalableFooter={})).events=function(){console.log("scalable-footer.js Detected!")}});

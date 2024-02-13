@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,a){"use strict";var n;Object.defineProperty(a,"__esModule",{value:!0}),a.ScalableMain=void 0,(n||(a.ScalableMain={})).events=function(){console.log("scalable-main.js Detected!")}});

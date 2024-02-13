@@ -1,0 +1,12 @@
+.default-leftbar {
+  // display: flex;
+  display: none;
+  // border: 4px dashed $turquoise-neon;
+  // background: rgba($turquoise-neon, 0.125);
+  //--🠋 Desktop (Landscape) 🠋--//
+  @media screen and (orientation: landscape) {
+  }
+  //--🠋 Mobile (Portrait) 🠋--//
+  @media screen and (orientation: portrait) {
+  }
+}

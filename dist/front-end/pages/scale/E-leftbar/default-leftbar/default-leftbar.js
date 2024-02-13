@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,t){"use strict";var f;Object.defineProperty(t,"__esModule",{value:!0}),t.DefaultLeftbar=void 0,(f||(t.DefaultLeftbar={})).events=function(){console.log("default-leftbar.js Detected!")}});

@@ -1,0 +1,199 @@
+//--|▼| Primary Button (Overhaul) |▼|--//
+button[class*='primary'] {
+  border: none;
+  font-weight: bold;
+  color: $primary-light;
+  background: $primary-medium;
+  transition: all 0.25s ease-in;
+  text-shadow: 0 0 4px black; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+  box-shadow: inset 0 0 2em rgba($primary-dark, 0.75);
+  filter: drop-shadow(0 0 1em rgba($primary-medium, 0.25));
+}
+button[class*='primary']:hover {
+  color: $primary-dark;
+  text-shadow: 0 0 4px white; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+  background-color: $primary-medium !important;
+  box-shadow: inset 0 0 2em rgba($primary-light, 0.75);
+}
+button[class*='outline-primary'] {
+  background: none;
+  border: solid 2px $primary-light;
+}
+button[class*='outline-primary']:hover {
+  background: none;
+  border: solid 2px $primary-dark;
+}
+
+//--|▼| Secondary Button (Overhaul) |▼|--//
+button[class*='secondary'] {
+  border: none;
+  font-weight: bold;
+  color: $secondary-light;
+  text-shadow: 0 0 4px black; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+  background: $secondary-medium;
+  transition: all 0.25s ease-in;
+  box-shadow: inset 0 0 2em rgba($secondary-dark, 0.75);
+  filter: drop-shadow(0 0 1em rgba($secondary-medium, 0.25));
+}
+button[class*='secondary']:hover {
+  color: $secondary-dark;
+  text-shadow: 0 0 4px white; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+  background-color: $secondary-medium !important;
+  box-shadow: inset 0 0 2em rgba($secondary-light, 0.75);
+}
+button[class*='outline-secondary'] {
+  background: none;
+  border: solid 2px $secondary-light;
+}
+button[class*='outline-secondary']:hover {
+  background: none;
+  border: solid 2px $secondary-dark;
+}
+
+//--|▼| Form Input Overhaul |▼|--//
+input[class*='form-control'] {
+  color: $primary-light;
+  text-shadow: 0 0 4px black; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+  transition: all 0.25s ease-in;
+  background: rgba($primary-medium, 0.25);
+  filter: drop-shadow(0 0 8px $primary-dark);
+  border: 1px solid rgba($primary-medium, 0.75);
+  box-shadow: inset 0 0 1em (rgba($primary-light, 0.75));
+}
+input[class*='form-control']:focus,
+input[class*='form-control']:hover,
+input[class*='form-control']:active {
+  color: $primary-light;
+  background: rgba($primary-dark, 0.25);
+  border: 1px solid rgba($primary-light, 1);
+  filter: drop-shadow(0 0 1em $primary-light);
+  box-shadow: inset 0 0 1em (rgba($primary-medium, 0.75));
+}
+input[class*='form-control']::placeholder {
+  color: $primary-medium;
+}
+
+/*
+  border-radius: 0 0 8px 8px; //--◄ Top-left, Top-Right, Bottom-right, Bottom-left ◄--//
+  background-color: $primary-dark;
+  section {
+    height: 100%;
+    display: none;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    form,
+    aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    aside {
+      grid-column: 2/3;
+      padding-right: 8px;
+      color: $primary-light;
+    }
+    form {
+      grid-column: 3/12;
+      input {
+        outline: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 4px 0 4px 1em; //--◄ Top, Right, Bottom, Left ◄--//
+        background: rgba($primary-medium, 0.5);
+        border: 1px solid rgba($primary-light, 0.25);
+        box-shadow: inset 0 0 1em rgba(white, 0.25);
+      }
+    }
+
+    button {
+      border: none;
+      display: grid;
+      outline: none;
+      cursor: default;
+      background: none;
+      grid-template-rows: 1fr auto 1fr;
+      grid-template-columns: 1fr auto 1fr;
+
+      :is(h1, h2, h3, h4, h5, h6) {
+        z-index: 1;
+        grid-row: 2/3;
+        cursor: pointer;
+        grid-column: 2/3;
+        font-weight: bold;
+        color: $primary-light;
+        transition: all 0.25s ease-in;
+        text-shadow: 0 0 16px black; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+      }
+      :is(h1, h2, h3, h4, h5, h6):hover {
+        color: $primary-dark;
+        text-shadow: 0 0 16px white; //--◄ X-axis, Y-axis, Blur, Color ◄--//
+      }
+      div {
+        z-index: 0;
+        opacity: 0.5;
+        display: flex;
+        grid-row: 1/4;
+        grid-column: 1/4;
+        align-items: center;
+        color: $primary-medium;
+        justify-content: center;
+      }
+    }
+  }
+  section[class*='active'] {
+    display: grid;
+  }
+  #login-section {
+    aside,
+    form {
+      grid-row: 3/7;
+    }
+    button[id*='login'] {
+      grid-row: 8/10;
+    }
+
+    aside {
+      grid-column: 2/3;
+    }
+    form {
+      grid-column: 3/12;
+    }
+
+    #login-submit {
+      grid-column: 1/7;
+    }
+    #login-password {
+      grid-column: 7/13;
+    }
+  }
+  #signup-section {
+    aside,
+    form {
+      grid-row: 1/9;
+    }
+    button[id*='signup'] {
+      grid-row: 9/11;
+    }
+
+    #signup-submit {
+      grid-column: 1/7;
+    }
+    #signup-demo {
+      grid-column: 7/13;
+    }
+  }
+
+  //--▼ Desktop (Landscape) ▼--//
+  @media screen and (orientation: landscape) {
+    grid-row: 4/14;
+    grid-column: 8/20;
+    //--► background-color: darkred; ◄--//
+  }
+  //--▼ Mobile (Portrait) ▼--//
+  @media screen and (orientation: portrait) {
+    grid-row: 10/20;
+    grid-column: 2/14;
+    //--► background-color: darkblue; ◄--//
+  }
+  */

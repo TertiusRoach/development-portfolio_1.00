@@ -1,0 +1,372 @@
+.default-main {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth; //--🠊 Only works with Firefox 🠈--//
+
+  #main-home {
+    //--🠊 display: block; 🠈--//
+    div {
+      //--🠊 display: grid; 🠈--//
+      // border: 4px dashed $blue-neon;
+      // background: rgba($blue-neon, 0.25);
+      .home-welcome {
+        z-index: 4;
+        display: flex;
+        white-space: nowrap;
+        filter: drop-shadow(0 0 4px black);
+        h1 {
+          color: $primary-light;
+          filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.5));
+        }
+      }
+      .home-title {
+        z-index: 3;
+        display: flex;
+        h2 {
+          position: relative;
+          color: $primary-dark;
+          filter: drop-shadow(0 0 4px black);
+          -webkit-text-stroke: 2px $primary-medium;
+          &::before {
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            color: $primary-light;
+            border-radius: 0.25rem;
+            content: attr(data-text);
+            border-right: 4px solid rgba(white, 0.75);
+            filter: drop-shadow(0 0 2rem rgba(white, 0.25));
+            animation: animate 90s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+          }
+          @keyframes animate {
+            0% {
+              width: 0;
+            }
+            50% {
+              width: 100%;
+            }
+            100% {
+              width: 0;
+            }
+          }
+        }
+      }
+      .home-description {
+        z-index: 2;
+        display: flex;
+        filter: drop-shadow(0 0 4px black);
+        p {
+          margin: 5% 0;
+          color: white;
+          line-height: 1.5;
+          word-spacing: 2px;
+          text-align: justify;
+          padding: 0.25rem 0.25rem 0.25rem 0;
+        }
+      }
+      .home-buttons {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .button {
+          z-index: 0;
+          width: auto;
+          height: auto;
+          cursor: default;
+          overflow: hidden;
+          position: relative;
+          align-items: center;
+          display: inline-flex;
+          text-decoration: none;
+          border-radius: 0.25rem;
+          justify-content: center;
+          border: 4px solid $primary-medium;
+
+          h6 {
+            z-index: 2;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 4px;
+            transition: 0.25s ease-in-out;
+          }
+
+          &::before {
+            top: 0;
+            left: 0;
+            z-index: 1;
+            content: '';
+            height: 100%;
+            transition: 0.5s;
+            position: absolute;
+          }
+
+          &:hover {
+            h6 {
+              color: $primary-medium;
+            }
+          }
+        }
+
+        .button:nth-child(1) {
+          color: $primary-dark;
+          background: $primary-light;
+          filter: drop-shadow(0 0 0.25rem rgba(white, 0.25));
+
+          h6:hover {
+            color: $primary-light;
+            filter: drop-shadow(0 0 8px black);
+          }
+
+          &::before {
+            width: 0;
+            background: $primary-dark;
+          }
+
+          &:nth-child(1):hover::before {
+            width: 100%;
+          }
+        }
+
+        .button:nth-child(2) {
+          color: $primary-light;
+          background: $primary-light;
+          filter: drop-shadow(0 0 0.25rem rgba(black, 0.75));
+
+          h6:hover {
+            color: $primary-dark;
+            filter: drop-shadow(0 0 8px white);
+          }
+
+          &::before {
+            width: 100%;
+            background: $primary-dark;
+          }
+
+          &:nth-child(2):hover::before {
+            width: 0;
+          }
+        }
+      }
+      .home-profile {
+        z-index: 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        span[class*='circle'] {
+          display: flex;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          figure {
+            z-index: 1;
+            overflow: hidden;
+            margin-bottom: 0; //--🠊 There's a default margin applied to this tag, I think 🠈--//
+            border-radius: 50%;
+            position: relative;
+          }
+          figure::before {
+            content: '';
+            position: absolute;
+            // transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), ease-in-out;
+          }
+          figure::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            background: $primary-dark;
+          }
+          &:hover ~ .outer-circle,
+          &:hover ~ .inner-circle {
+            figure::before {
+              inset: -1.25rem 0;
+            }
+          }
+        }
+        .profile-circle {
+          z-index: 3; //--🠊 Set a lower z-index for outer-circle 🠈--//
+          height: 80vh;
+          margin-bottom: 5%;
+          img {
+            height: 75%;
+            transition-duration: 5s;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), ease-in-out;
+          }
+          img:hover {
+            height: 85%;
+          }
+        }
+        .inner-circle {
+          z-index: 2; //--🠊 Set a higher z-index for inner-circle 🠈--//
+          height: auto;
+          filter: drop-shadow(0 0 4rem rgba($primary-medium, 0.25));
+          figure::before {
+            inset: -0.5rem 4rem;
+            animation: anti-clockwise 45s linear infinite;
+            background: linear-gradient(-90deg, $primary-light 25%, $primary-dark 75%);
+          }
+          figure::after {
+            inset: 0 0.25rem;
+          }
+          @keyframes anti-clockwise {
+            0% {
+              transform: rotate(360deg);
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+        .outer-circle {
+          z-index: 1; //--🠊 Set a lower z-index for outer-circle 🠈--//
+          height: 100%;
+          figure::before {
+            inset: -1rem 6rem;
+            animation: clockwise 90s linear infinite;
+            background: linear-gradient(90deg, $primary-light 25%, $primary-dark 75%);
+          }
+          figure::after {
+            inset: 0.25rem 0;
+          }
+
+          @keyframes clockwise {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //--🠋 Desktop (Landscape) 🠋--//
+  @media screen and (orientation: landscape) {
+    #main-home div {
+      //--🠊 display: grid; 🠈--//
+      grid-template: repeat(7, 1fr) / repeat(5, 1fr); //--🠊 grid-template-rows / grid-template-columns 🠈--//
+      .home-welcome {
+        //--🠊 display: flex; 🠈--//
+        align-items: flex-end;
+        grid-area: 1 / 1 / 3 / 4; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        justify-content: flex-start;
+      }
+      .home-title {
+        //--🠊 display: flex; 🠈--//
+        align-items: flex-start;
+        grid-area: 3 / 1 / 4 / 4; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        justify-content: flex-start;
+      }
+      .home-description {
+        //--🠊 display: flex; 🠈--//
+        align-items: flex-start;
+        grid-area: 4 / 1 / 8 / 3; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        justify-content: flex-end;
+      }
+      .home-buttons {
+        //--🠊 display: flex; 🠈--//
+        flex-direction: column;
+        grid-area: 4 / 3 / 8 / 4; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        .button {
+          margin: 12.5% 0;
+          padding: 0.5rem 1rem;
+          justify-content: center;
+        }
+      }
+      .home-profile {
+        margin-left: 25%;
+        //--🠊 display: flex; 🠈--//
+        grid-area: 1 / 3 / 8 / 6; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+      }
+    }
+    #main-skills div {
+      //--🠊 display: grid; 🠈--//
+      border: 4px dashed $purple-neon;
+      background: rgba($purple-neon, 0.25);
+    }
+    #main-employment div {
+      //--🠊 display: grid; 🠈--//
+      border: 4px dashed $red-neon;
+      background: rgba($red-neon, 0.25);
+    }
+    #main-contact div {
+      //--🠊 display: grid; 🠈--//
+      border: 4px dashed $brown-neon;
+      background: rgba($brown-neon, 0.25);
+    }
+  }
+
+  //--🠋 Mobile (Portrait) 🠋--//
+  @media screen and (orientation: portrait) {
+    #main-home div {
+      //--🠊 display: grid; 🠈--//
+      grid-template: repeat(12, 1fr) / 1fr; //--🠊 grid-template-rows / grid-template-columns 🠈--//
+      .home-welcome {
+        //--🠊 display: flex; 🠈--//
+        align-items: flex-end;
+        justify-content: center;
+        grid-area: 1 / 1 / 2 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+
+        h1 {
+          white-space: nowrap; //--🠊 Use white-space property instead of text-wrap 🠈--//
+        }
+      }
+      .home-title {
+        //--🠊 display: flex; 🠈--//
+        align-items: flex-start;
+        justify-content: center;
+        grid-area: 2 / 1 / 3 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        h2 {
+          white-space: nowrap;
+        }
+      }
+      @media only screen and (max-width: 630px) {
+        .home-welcome h1 {
+          display: none;
+        }
+        .home-title {
+          align-items: center;
+          grid-area: 1 / 1 / 3 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .home-description {
+        align-items: flex-start;
+        grid-area: 6 / 1 / 12 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        // background: radial-gradient(circle, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 75%);
+        //--🠊 display: flex; 🠈--//
+      }
+      .home-buttons {
+        flex-direction: row;
+        //--🠊 display: flex; 🠈--//
+        justify-content: center;
+        grid-area: 12 / 1 / 13 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+        .button {
+          margin: 0 6.25%;
+          padding: 1rem 2rem;
+        }
+      }
+      .home-profile {
+        grid-area: 2 / 1 / 12 / 2; //--🠊 row-start / col-start / row-end / col-end 🠈--//
+      }
+    }
+    #main-skills div {
+      //--🠊 display: grid; 🠈--//
+    }
+    #main-employment div {
+      //--🠊 display: grid; 🠈--//
+    }
+    #main-contact div {
+      //--🠊 display: block; 🠈--//
+    }
+  }
+}

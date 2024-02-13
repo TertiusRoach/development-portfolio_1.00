@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "exclude": ["dist/"],
+  "include": ["src/"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": "src",
+    "target": "es6",
+    "module": "amd",
+    "sourceMap": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "lib": ["es5", "dom", "scripthost", "es2015"],
+    "strictNullChecks": false
+  }
+}

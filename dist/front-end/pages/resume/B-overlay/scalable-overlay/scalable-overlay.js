@@ -1,0 +1,1 @@
+define(["require","exports"],function(e,l){"use strict";var a;Object.defineProperty(l,"__esModule",{value:!0}),l.ScalableOverlay=void 0,(a||(l.ScalableOverlay={})).events=function(){console.log("scalable-overlay.js Detected!")}});
