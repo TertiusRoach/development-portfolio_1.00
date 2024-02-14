@@ -287,18 +287,15 @@
     }
     #main-skills div {
       //--🠊 display: grid; 🠈--//
-      border: 4px dashed $purple-neon;
-      background: rgba($purple-neon, 0.25);
+      @include highlight-purple;
     }
     #main-employment div {
       //--🠊 display: grid; 🠈--//
-      border: 4px dashed $red-neon;
-      background: rgba($red-neon, 0.25);
+      @include highlight-red;
     }
     #main-contact div {
       //--🠊 display: grid; 🠈--//
-      border: 4px dashed $brown-neon;
-      background: rgba($brown-neon, 0.25);
+      @include highlight-brown;
     }
   }
 

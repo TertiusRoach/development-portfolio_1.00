@@ -1,4 +1,45 @@
 .default-body {
+  @mixin highlight-green {
+    border: 4px dashed $green-neon;
+    background: rgba($green-light, 0.25);
+  }
+  @mixin highlight-pink {
+    border: 4px dashed $pink-neon;
+    background: rgba($pink-light, 0.25);
+  }
+  @mixin highlight-yellow {
+    border: 4px dashed $yellow-neon;
+    background: rgba($yellow-light, 0.25);
+  }
+  @mixin highlight-orange {
+    border: 4px dashed $orange-neon;
+    background: rgba($orange-light, 0.25);
+  }
+  @mixin highlight-blue {
+    border: 4px dashed $blue-neon;
+    background: rgba($blue-light, 0.25);
+  }
+  @mixin highlight-purple {
+    border: 4px dashed $purple-neon;
+    background: rgba($purple-light, 0.25);
+  }
+  @mixin highlight-red {
+    border: 4px dashed $red-neon;
+    background: rgba($red-light, 0.25);
+  }
+  @mixin highlight-brown {
+    border: 4px dashed $brown-neon;
+    background: rgba($brown-light, 0.25);
+  }
+  @mixin highlight-grey {
+    border: 4px dashed $grey-neon;
+    background: rgba($grey-light, 0.25);
+  }
+  @mixin highlight-turquiose {
+    border: 4px dashed $turquiose-neon;
+    background: rgba($turquiose-light, 0.25);
+  }
+
   display: grid;
   height: 100vh;
   background: $primary-dark;

@@ -7,3 +7,4 @@ node_modules
 package.json
 package-lock.json
 *.lnk
+.DS_Store

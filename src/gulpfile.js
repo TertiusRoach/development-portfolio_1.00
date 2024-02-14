@@ -146,9 +146,9 @@ const compileSASS = (pageName) => {
 
   //--🠋 Execute functions asynchronously 🠋--//
   concatenate(pageName);
-  setTimeout(remove, 5000);
-  setTimeout(compile, 2500, pageName);
-  setTimeout(prepend, 7500, pageName);
+  setTimeout(compile, 5000, pageName);
+  setTimeout(remove, 10000);
+  setTimeout(prepend, 15000, pageName);
 };
 const copyContent = (pageName) => {
   //--🠋 Copy content into distributable folder 🠋--//
